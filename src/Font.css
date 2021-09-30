@@ -1,0 +1,60 @@
+.dropdown-item {
+    font-size: 0.9rem;
+}
+
+
+/**********************************************************************/
+@font-face {
+    font-family: rubik;
+    src: url(./fonts/Rubik/Rubik-VariableFont_wght.ttf) format("truetype-variations");
+}
+.rubik, .rubik-light, .rubik-bold {
+    font-family: rubik;
+}
+.rubik-light {
+    font-weight: 300;
+}
+.rubik-bold {
+    font-weight: bold;
+}
+/**********************************************************************/
+@font-face {
+    font-family: rubik-italic;
+    src: url(./fonts//Rubik//Rubik-Italic-VariableFont_wght.ttf);
+}
+.rubik-italic {
+    font-family: rubik-italic;
+}
+/**********************************************************************/
+@font-face {
+    font-family: roboto;
+    src: url(./fonts/Roboto/Roboto-Regular.ttf);
+}
+.roboto {
+    font-family: roboto;
+}
+/**********************************************************************/
+@font-face {
+    font-family: roboto-light;
+    src: url(./fonts/Roboto/Roboto-Light.ttf);
+}
+.roboto-light {
+    font-family: roboto-light;
+}
+/**********************************************************************/
+@font-face {
+    font-family: product;
+    src: url(./fonts/product-sans/ProductSansRegular.ttf);
+}
+.product {
+    font-family: product;
+}
+/**********************************************************************/
+@font-face {
+    font-family: product-bold;
+    src: url(./fonts/product-sans/ProductSansBold.ttf);
+}
+.product-bold {
+    font-family: product-bold;
+}
+/**********************************************************************/

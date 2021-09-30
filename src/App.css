@@ -1,0 +1,81 @@
+ul {
+    text-align: left;   
+}
+
+li {
+    text-align: left;
+}
+.App {
+    text-align: center;
+    display: flex;
+}
+
+.bg-img {
+    background-image: url(./image/Wall.jpg);
+    background-size: cover;
+    background-position: top;
+    background-attachment: scroll;
+}
+
+.bg-br {
+    background-color: #C14953;
+}
+
+.bg-gw {
+    background-color: #F0EFF4;
+}
+
+.bg-rb {
+    background-color: #023436;
+    
+}
+
+.bg-tb {
+    background-color: #00BFB3;
+}
+
+.bg-msb {
+    background-color: #7F7EFF;
+}
+
+.padr-1 {
+    padding-right: 1rem;
+}
+.padr-2 {
+    padding-right: 2rem;
+}
+.padr-3 {
+    padding-right: 3rem;
+}
+.padr-4 {
+    padding-right: 4rem;
+}
+/****************FOOTER***********************/
+.footer {
+    height: 280px;
+    
+}
+
+.footer-top {
+    height: 100%;
+    justify-content: center;
+    align-items: center ;
+}
+
+.footer-bottom {
+    height: 7%;
+    background-color: #00BFB3;
+}
+
+.intro {
+    height: 5vh;
+    width: 100vw;
+}
+
+.nav-scrolled {
+    background-color: #02343690;
+}
+
+.navbar-scrolled {
+    color: #F0EFF4;
+}
