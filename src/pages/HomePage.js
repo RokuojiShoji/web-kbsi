@@ -12,9 +12,6 @@ function HomePage() {
   useEffect(() => {
     const sectionOne = document.querySelector(".intro");
     const nav = document.querySelector("nav");
-    const navbar = document.querySelector(".navbar-nav");
-
-    const sectionOneOptions = {};
 
     const sectionOneObserver = new IntersectionObserver(function (
       entries,
@@ -23,13 +20,15 @@ function HomePage() {
       entries.forEach((entry) => {
         if (!entry.isIntersecting) {
           nav.classList.add("nav-scrolled");
-          navbar.classList.add("navbar-scrolled");
+          nav.classList.add("navbar-dark");
+          nav.classList.remove("navbar-light")
         } else {
           nav.classList.remove("nav-scrolled")
+          nav.classList.add("navbar-light");
+          nav.classList.remove("navbar-dark")
         }
       });
-    },
-    sectionOneOptions);
+    });
     
     sectionOneObserver.observe(sectionOne);
   });

@@ -73,9 +73,15 @@ li {
 }
 
 .nav-scrolled {
-    background-color: #02343690;
+    background-color: #023436;
 }
 
 .navbar-scrolled {
     color: #F0EFF4;
+}
+
+.transition {
+    transition-property: background-color, color, font-family;
+    transition-timing-function: ease;
+    transition-duration: 0.5s;
 }

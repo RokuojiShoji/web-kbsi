@@ -19,9 +19,9 @@ function Navi() {
   }
   return (
     <Navbar
-      className="fixed-top product-bold"
+      className="fixed-top product-bold transition"
       style={font1}
-      variant="light"
+      variant="dark"
       expand="md"
     >
       <Container>

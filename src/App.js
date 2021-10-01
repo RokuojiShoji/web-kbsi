@@ -2,7 +2,6 @@ import './App.css';
 import './Font.css';
 import 'bootstrap/dist/css/bootstrap.min.css'
 import 'bootstrap/dist/js/bootstrap.min.js'
-import Nav2 from './components/Nav2';
 import Navi from './components/Navi.jsx'
 import CoverImg from './components/CoverImg';
 import Container from 'react-bootstrap/Container'
