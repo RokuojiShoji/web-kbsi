@@ -7,7 +7,7 @@ import CoverImg from './components/CoverImg';
 import Container from 'react-bootstrap/Container'
 import { Col, Row } from 'react-bootstrap';
 import { Route, BrowserRouter as Router, Switch, Redirect } from 'react-router-dom';
-import bgImg from './image/testWall.jpg'
+import bgImg from './image/testBG1.png'
 
 import VisiMisi from './pages/TentangKami/VisiMisi'
 import DaftarAnggota from './pages/Anggota/DaftarAnggota';

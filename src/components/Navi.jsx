@@ -19,7 +19,7 @@ function Navi() {
   }
   return (
     <Navbar
-      className="fixed-top product-bold transition"
+      className="fixed-top product transition"
       style={font1}
       variant="dark"
       expand="md"

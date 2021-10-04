@@ -2,7 +2,7 @@ import HpGallery from "../components/HpGallery.jsx";
 import Parag from "../components/Parag.jsx";
 import { Col, Row, Container, FormCheck, Image } from "react-bootstrap";
 import Table from "../components/Tabel.jsx"
-import wall from "../image/testWall.jpg"
+//import wall from "../image/testBG1.png"
 import { useEffect } from "react";
 
   
@@ -20,12 +20,8 @@ function HomePage() {
       entries.forEach((entry) => {
         if (!entry.isIntersecting) {
           nav.classList.add("nav-scrolled");
-          nav.classList.add("navbar-dark");
-          nav.classList.remove("navbar-light")
         } else {
           nav.classList.remove("nav-scrolled")
-          nav.classList.add("navbar-light");
-          nav.classList.remove("navbar-dark")
         }
       });
     });
