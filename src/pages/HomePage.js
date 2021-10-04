@@ -1,17 +1,18 @@
 import HpGallery from "../components/HpGallery.jsx";
 import Parag from "../components/Parag.jsx";
 import { Col, Row, Container, FormCheck, Image } from "react-bootstrap";
-import Table from "../components/Tabel.jsx"
+import Table from "../components/Tabel.jsx";
 //import wall from "../image/testBG1.png"
 import { useEffect } from "react";
 
-  
-
 function HomePage() {
-  
   useEffect(() => {
     const sectionOne = document.querySelector(".intro");
     const nav = document.querySelector("nav");
+
+    const sectionOneOption = {
+      rootMargin: "-25% 0% 0% 0%  ",
+    };
 
     const sectionOneObserver = new IntersectionObserver(function (
       entries,
@@ -21,29 +22,26 @@ function HomePage() {
         if (!entry.isIntersecting) {
           nav.classList.add("nav-scrolled");
         } else {
-          nav.classList.remove("nav-scrolled")
+          nav.classList.remove("nav-scrolled");
         }
       });
-    });
-    
+    }, sectionOneOption);
+
     sectionOneObserver.observe(sectionOne);
   });
-  
+
   const hpw = {
-    height: "100vh"
-  }
+    height: "100vh",
+  };
 
   return (
     <Container fluid="true">
-      <Container className="intro"></Container>
-      
-      <Col style={hpw}>
+      <Row className="intro bg-img"></Row>
+      <Row className="">
         
-      </Col>
-      <div className="overlay" style={{backgroundImage: 'url(${wall})'}}/>
+      </Row>
     </Container>
   );
-
 }
 
 export default HomePage;

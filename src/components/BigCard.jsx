@@ -1,4 +1,4 @@
-import { Container } from "react-bootstrap";
+import { Container, Row } from "react-bootstrap";
 
 
 export default function BigCard () {
@@ -15,12 +15,12 @@ export default function BigCard () {
 	
 	return (
 		<>
-		<Container style={card} className="w-75">
+		<Row style={card} className="">
 			<h2>VISI</h2>
 			<p>lorem ipsum dolor sit amet</p>
-		</Container>
+		</Row>
 
-		<Container style={card} className="px-5 w-75">
+		<Row style={card} className="">
 			<h2>MISI</h2>
 
 			<ul>
@@ -30,7 +30,7 @@ export default function BigCard () {
 				<li>sit</li>
 				<li>amet</li>
 			</ul>
-		</Container>
+		</Row>
 		</>
   );
 }

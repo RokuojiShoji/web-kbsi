@@ -1,8 +1,12 @@
 import BigCard from "../../components/BigCard";
+import { Container } from "react-bootstrap";
 
 function VisiMisi () {
 	return (
-		<BigCard />
+		<Container className="my-5 w-50 justify-content-center">
+			<BigCard />
+		</Container>
+		
 	)
 }
 

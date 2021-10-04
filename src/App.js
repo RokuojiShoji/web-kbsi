@@ -22,18 +22,26 @@ import StrukturOrganisasi from './pages/TentangKami/StrukturOrganisasi';
 import SusunanOrganisasi from './pages/TentangKami/SusunanOrganisasi';
 import Footer from './components/Footer';
 import Laporan from './pages/TentangKami/Laporan';
+import { useEffect } from 'react';
 
 function App() {
   const bg = {
     backgroundImage: 'url{$bgImg}' 
   }
   
+  useEffect(() => {
+    const isHome = window.location.href;
+  const nav = document.querySelector("nav")
+  if (isHome != "home") {
+    nav.classList.add("nav-scrolled")
+  }
+  })
+
   return (
     <>
     <Router>
     <Navi />
-      <Container fluid="true" className="App bg-img">
-        
+      <Container fluid="true" className="App g-0">
           <Switch>
             <Route path="/visiMisi">
               <VisiMisi />
