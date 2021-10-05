@@ -1,8 +1,8 @@
 import HpGallery from "../components/HpGallery.jsx";
 import Parag from "../components/Parag.jsx";
-import { CardGroup, Col, Row, Container, FormCheck, Image, Card, CardColumns } from "react-bootstrap";
-import Table from "../components/Tabel.jsx";
+import {Col, Row, Container, Carousel} from "react-bootstrap";
 import { useEffect } from "react";
+import test from '../image/testBG1.png'
 
 function HomePage() {
   useEffect(() => {
@@ -34,12 +34,65 @@ function HomePage() {
   };
 
   return (
-      <>
+    <>
       <Row className="intro bg-img g-0"></Row>
-      <Row style={hpw} className="g-0">
-        
+      <Row className="g-0 justify-content-center">
+        <Carousel className="w-50 p-4 px-3">
+          <Carousel.Item>
+            <img className="d-block w-100" src={test} alt="First slide" />
+            <Carousel.Caption>
+              <h3>First slide label</h3>
+              <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
+            </Carousel.Caption>
+          </Carousel.Item>
+          <Carousel.Item>
+            <img className="d-block w-100" src={test} alt="Second slide" />
+
+            <Carousel.Caption>
+              <h3>Second slide label</h3>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            </Carousel.Caption>
+          </Carousel.Item>
+          <Carousel.Item>
+            <img className="d-block w-100" src={test} alt="Third slide" />
+
+            <Carousel.Caption>
+              <h3>Third slide label</h3>
+              <p>
+                Praesent commodo cursus magna, vel scelerisque nisl consectetur.
+              </p>
+            </Carousel.Caption>
+          </Carousel.Item>
+        </Carousel>
+        <Carousel className="w-50 p-4 px-3">
+          <Carousel.Item>
+            <img className="d-block w-100" src={test} alt="First slide" />
+            <Carousel.Caption>
+              <h3>First slide label</h3>
+              <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
+            </Carousel.Caption>
+          </Carousel.Item>
+          <Carousel.Item>
+            <img className="d-block w-100" src={test} alt="Second slide" />
+
+            <Carousel.Caption>
+              <h3>Second slide label</h3>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            </Carousel.Caption>
+          </Carousel.Item>
+          <Carousel.Item>
+            <img className="d-block w-100" src={test} alt="Third slide" />
+
+            <Carousel.Caption>
+              <h3>Third slide label</h3>
+              <p>
+                Praesent commodo cursus magna, vel scelerisque nisl consectetur.
+              </p>
+            </Carousel.Caption>
+          </Carousel.Item>
+        </Carousel>
       </Row>
-      </>
+    </>
   );
 }
 
