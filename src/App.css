@@ -1,3 +1,5 @@
+
+
 ul {
     text-align: left;   
 }
@@ -69,7 +71,7 @@ li {
 
 .intro {
     height: 100vh;
-    width: 99.6vw;
+    width: 100%;
 }
 
 .nav-scrolled {

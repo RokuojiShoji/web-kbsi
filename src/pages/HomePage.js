@@ -1,8 +1,7 @@
 import HpGallery from "../components/HpGallery.jsx";
 import Parag from "../components/Parag.jsx";
-import { Col, Row, Container, FormCheck, Image } from "react-bootstrap";
+import { CardGroup, Col, Row, Container, FormCheck, Image, Card, CardColumns } from "react-bootstrap";
 import Table from "../components/Tabel.jsx";
-//import wall from "../image/testBG1.png"
 import { useEffect } from "react";
 
 function HomePage() {
@@ -11,7 +10,7 @@ function HomePage() {
     const nav = document.querySelector("nav");
 
     const sectionOneOption = {
-      rootMargin: "-25% 0% 0% 0%  ",
+      rootMargin: "-20% 0% 0% 0%  ",
     };
 
     const sectionOneObserver = new IntersectionObserver(function (
@@ -35,12 +34,12 @@ function HomePage() {
   };
 
   return (
-    <Container fluid="true">
-      <Row className="intro bg-img"></Row>
-      <Row className="">
+      <>
+      <Row className="intro bg-img g-0"></Row>
+      <Row style={hpw} className="g-0">
         
       </Row>
-    </Container>
+      </>
   );
 }
 

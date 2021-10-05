@@ -38,10 +38,9 @@ function App() {
   })
 
   return (
-    <>
-    <Router>
-    <Navi />
-      <Container fluid="true" className="App g-0">
+    <Container fluid="true">
+      <Router>
+        <Navi />
           <Switch>
             <Route path="/visiMisi">
               <VisiMisi />
@@ -83,12 +82,9 @@ function App() {
               <Redirect to="/Home" />
             </Route>
           </Switch>
-          
-        
-      </Container>
-    </Router>
-    <Footer />
-    </>
+      </Router>
+      <Footer />
+    </Container>
   );
 }
 
