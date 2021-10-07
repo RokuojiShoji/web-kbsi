@@ -1,7 +1,7 @@
 import Nav from "react-bootstrap/Nav";
 import Navbar from "react-bootstrap/Navbar";
 import NavDropdown from "react-bootstrap/NavDropdown";
-import { Container, Row, Col } from "react-bootstrap";
+import { Container } from "react-bootstrap";
 import logo from "../image/logoBsi.png";
 
 function Navi() {
@@ -9,15 +9,12 @@ function Navi() {
   const font1 = {
     fontSize: '1.1rem'
   }
-
-  const font2 = {
-    fontSize: '0.95rem'
-  }
   
   const bg = {
     backgroundColor: '#00000095'
   }
   return (
+    <>
     <Navbar
       className="fixed-top product transition"
       style={font1}
@@ -82,6 +79,7 @@ function Navi() {
       
       </Container>
     </Navbar>
+    </>
   );
 }
 
