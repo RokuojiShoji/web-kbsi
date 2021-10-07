@@ -27,7 +27,7 @@ export default function Footer () {
           </Col>
         </Row>
       </Col>
-      <div className="text-center footer-bottom bg-rb rubik-bold">Copyright &copy; Koperasi bsi </div>
+      <div className="px-2 text-end footer-bottom bg-rb rubik">Copyright &copy; Koperasi bsi </div>
     </Container>
   );
 }

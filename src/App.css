@@ -1,4 +1,7 @@
 
+.dropdown-item {
+    font-size: 0.94rem !important;
+}
 
 ul {
     text-align: left;   
@@ -13,7 +16,7 @@ li {
 }
 
 .bg-img {
-    background-image: url(./image/testBG1.png);
+    background-image: linear-gradient(#12345600, #12345600, #12345600, #470438), url('./image/BG2.png');
     background-size: cover;
     background-position: top;
     background-attachment: scroll;
@@ -28,7 +31,7 @@ li {
 }
 
 .bg-rb {
-    background-color: #023436;
+    background-color: #292929;
     
 }
 
@@ -38,6 +41,10 @@ li {
 
 .bg-msb {
     background-color: #7F7EFF;
+}
+
+.bg-pp {
+    background-color: #470438;
 }
 
 .padr-1 {
@@ -55,7 +62,6 @@ li {
 /****************FOOTER***********************/
 .footer {
     height: 280px;
-    
 }
 
 .footer-top {
@@ -66,7 +72,7 @@ li {
 
 .footer-bottom {
     height: 7%;
-    background-color: #00BFB3;
+    color:#9b137d;
 }
 
 .intro {
@@ -75,7 +81,8 @@ li {
 }
 
 .nav-scrolled {
-    background-color: #023436;
+    background-color: #770f5e90;
+    backdrop-filter: blur(15px);
 }
 
 .navbar-scrolled {
@@ -83,7 +90,7 @@ li {
 }
 
 .transition {
-    transition-property: background-color, color, font-family;
+    transition-property: background-color, color;
     transition-timing-function: ease;
     transition-duration: 0.5s;
 }
