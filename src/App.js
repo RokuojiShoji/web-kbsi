@@ -34,7 +34,7 @@ function App() {
   useEffect(() => {
     const isHome = window.location.pathname;
     const nav = document.querySelector("nav");
-    if (isHome != "/home") {
+    if (isHome != "/Home") {
       nav.classList.add("nav-scrolled");
     }
   });
