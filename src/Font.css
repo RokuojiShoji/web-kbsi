@@ -20,6 +20,10 @@ h1 {
 .rubik-bold {
     font-weight: bold;
 }
+
+.rubik-550 {
+    font-weight: 550;
+}
 /**********************************************************************/
 @font-face {
     font-family: rubik-italic;
