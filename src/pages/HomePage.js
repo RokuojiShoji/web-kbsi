@@ -1,8 +1,7 @@
-import HpGallery from "../components/HpGallery.jsx";
-import Parag from "../components/Parag.jsx";
-import {Col, Row, Container, Carousel} from "react-bootstrap";
+
+import {Col, Row, Container} from "react-bootstrap";
 import { useEffect } from "react";
-import test from '../image/testBG1.png'
+
 
 function HomePage() {
   useEffect(() => {
@@ -29,9 +28,6 @@ function HomePage() {
     sectionOneObserver.observe(sectionOne);
   });
 
-  const hpw = {
-    height: "100vh",
-  };
 
   const im = {
     position: 'sticky',

@@ -27,14 +27,11 @@ import Laporan from "./pages/TentangKami/Laporan";
 import { useEffect } from "react";
 
 function App() {
-  const bg = {
-    backgroundImage: "url{$bgImg}",
-  };
 
   useEffect(() => {
     const isHome = window.location.pathname;
     const nav = document.querySelector("nav");
-    if (isHome != "/Home") {
+    if (isHome !== "/Home") {
       nav.classList.add("nav-scrolled");
     }
   });

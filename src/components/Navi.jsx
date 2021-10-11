@@ -10,9 +10,6 @@ function Navi() {
     fontSize: '1.1rem'
   }
   
-  const bg = {
-    backgroundColor: '#00000095'
-  }
   return (
     <>
     <Navbar
@@ -24,7 +21,7 @@ function Navi() {
       <Container>
         
           <Navbar.Brand href="/home">
-            <img className="padr-4" src={logo} height="38rem" />
+            <img className="padr-4" src={logo} height="38rem" alt="logo bsi"/>
           </Navbar.Brand>
        
           <Navbar.Toggle aria-controls="basic-navbar-nav" />
