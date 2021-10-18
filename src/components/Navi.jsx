@@ -10,9 +10,6 @@ function Navi() {
     fontSize: '1.1rem'
   }
   
-  const bg = {
-    backgroundColor: '#00000095'
-  }
   return (
     <>
     <Navbar
@@ -24,7 +21,7 @@ function Navi() {
       <Container>
         
           <Navbar.Brand href="/home">
-            <img className="padr-4" src={logo} height="38rem" />
+            <img className="padr-4" src={logo} height="38rem" alt="logo bsi"/>
           </Navbar.Brand>
        
           <Navbar.Toggle aria-controls="basic-navbar-nav" />
@@ -52,13 +49,12 @@ function Navi() {
                     Laporan
                   </NavDropdown.Item>
                 </NavDropdown>
-                <NavDropdown title="Produk" id="drop-product">
+                <Nav.Link href="/produk">Produk</Nav.Link>
+                {/* <NavDropdown title="Produk" id="drop-product">
                   <NavDropdown.Item href="/simpanan">Simpanan</NavDropdown.Item>
-                  <NavDropdown.Item href="/pembiayaan">
-                    Pembiayaan
-                  </NavDropdown.Item>
+                  <NavDropdown.Item href="/pembiayaan">Pembiayaan</NavDropdown.Item>
                   <NavDropdown.Item href="/ziswaf">Ziswaf</NavDropdown.Item>
-                </NavDropdown>
+                </NavDropdown> */}
                 <NavDropdown title="Anggota" id="drop-member">
                   <NavDropdown.Item href="/pendaftaranAnggota">
                     Pendaftaran Anggota

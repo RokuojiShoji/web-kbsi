@@ -14,12 +14,13 @@ import {
 import VisiMisi from "./pages/TentangKami/VisiMisi";
 import DaftarAnggota from "./pages/Anggota/DaftarAnggota";
 import PendaftaranAnggota from "./pages/Anggota/PendaftaranAnggota";
-import Pembiayaan from "./pages/Produk/Pembiayaan";
-import Simpanan from "./pages/Produk/Simpanan";
-import Ziswaf from "./pages/Produk/Ziswaf";
+    // import Pembiayaan from "./pages/Produk/Pembiayaan";
+    // import Simpanan from "./pages/Produk/Simpanan";
+    // import Ziswaf from "./pages/Produk/Ziswaf";
 import Kontak from "./pages/Kontak";
 import HomePage from "./pages/HomePage";
 import Media from "./pages/Media";
+import Produk from "./pages/Produk";
 import StrukturOrganisasi from "./pages/TentangKami/StrukturOrganisasi";
 import SusunanOrganisasi from "./pages/TentangKami/SusunanOrganisasi";
 import Footer from "./components/Footer";
@@ -27,15 +28,18 @@ import Laporan from "./pages/TentangKami/Laporan";
 import { useEffect } from "react";
 
 function App() {
-  const bg = {
-    backgroundImage: "url{$bgImg}",
-  };
 
   useEffect(() => {
     const isHome = window.location.pathname;
     const nav = document.querySelector("nav");
-    if (isHome != "/Home") {
+    const body = document.querySelector("body")
+    if (isHome !== "/home") {
       nav.classList.add("nav-scrolled");
+      nav.classList.add("sticky-top")
+      nav.classList.add("navbar-scrolled")
+      body.classList.remove("bg-pp")
+      body.classList.add("bg-gw")
+      
     }
   });
 
@@ -47,41 +51,44 @@ function App() {
           <Route path="/visiMisi">
             <VisiMisi />
           </Route>
-          <Route path="/DaftarAnggota">
+          <Route path="/daftarAnggota">
             <DaftarAnggota />
           </Route>
-          <Route path="/PendaftaranAnggota">
+          <Route path="/pendaftaranAnggota">
             <PendaftaranAnggota />
           </Route>
-          <Route path="/Pembiayaan">
+          <Route path="/produk">
+            <Produk />
+          </Route>
+          {/* <Route path="/pembiayaan">
             <Pembiayaan />
           </Route>
-          <Route path="/Simpanan">
+          <Route path="/simpanan">
             <Simpanan />
           </Route>
-          <Route path="/Ziswaf">
+          <Route path="/ziswaf">
             <Ziswaf />
-          </Route>
-          <Route path="/StrukturOrganisasi">
+          </Route> */}
+          <Route path="/strukturOrganisasi">
             <StrukturOrganisasi />
           </Route>
-          <Route path="/SusunanOrganisasi">
+          <Route path="/susunanOrganisasi">
             <SusunanOrganisasi />
           </Route>
-          <Route path="/Laporan">
+          <Route path="/laporan">
             <Laporan />
           </Route>
-          <Route path="/Kontak">
+          <Route path="/kontak">
             <Kontak />
           </Route>
-          <Route path="/Media">
+          <Route path="/media">
             <Media />
           </Route>
-          <Route path="/Home">
+          <Route path="/home">
             <HomePage />
           </Route>
           <Route path="/">
-            <Redirect to="/Home" />
+            <Redirect to="/home" />
           </Route>
         </Switch>
       </Router>
