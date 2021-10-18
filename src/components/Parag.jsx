@@ -7,7 +7,7 @@ function Parag() {
     <Container>
       <Row className="justify-content ">
         <Col>
-          <h2 className="h font-weight-bold">Koperasi BSI</h2>
+          <h2 className="h ">Koperasi BSI</h2>
         </Col>
       </Row>
       <Row>

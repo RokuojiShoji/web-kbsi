@@ -5,10 +5,6 @@ import wall from '../image/testWall.jpg'
 
 function HpGallery() {
 	
-  const gal = {
-    height: "50vh",
-    width: "50vw",
-  };
 
   return (
     <Container className="mt-4 mt-3">
