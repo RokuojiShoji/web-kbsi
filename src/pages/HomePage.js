@@ -1,6 +1,5 @@
 import {Col, Row, Container} from "react-bootstrap";
 import { useEffect } from "react";
-import '../image/wallet.svg'
 import svgWallet from '../components/svgWallet'
 import wallet from '../image/logoBsi.png'
 
@@ -112,7 +111,7 @@ function HomePage() {
         <Row className='mx-auto' style={{width:'80vw'}}>
           <Col>
             <div style={produkCard} className='bg-gw my-5 mx-auto'>
-              <img src={wallet}></img>
+              <img></img>
             </div>
           </Col>
           <Col >
