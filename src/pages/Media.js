@@ -1,8 +1,16 @@
+import { Container, Col, Row } from "react-bootstrap";
+import { Carousel  } from "react-bootstrap";
+
+
 function Media () {
 	return (
-		<p>
-			VISI MISI
-		</p>
+		<Container>
+			<Col>
+				<Row>
+					 
+				</Row>
+			</Col>
+		</Container>
 	)
 }
 

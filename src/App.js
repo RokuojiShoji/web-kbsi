@@ -48,13 +48,13 @@ function App() {
       <Router>
         <Navi />
         <Switch>
-          <Route path="/visiMisi">
+          <Route path="/visi-misi">
             <VisiMisi />
           </Route>
-          <Route path="/daftarAnggota">
+          <Route path="/daftar-anggota">
             <DaftarAnggota />
           </Route>
-          <Route path="/pendaftaranAnggota">
+          <Route path="/pendaftaran-anggota">
             <PendaftaranAnggota />
           </Route>
           <Route path="/produk">
@@ -69,10 +69,10 @@ function App() {
           <Route path="/ziswaf">
             <Ziswaf />
           </Route> */}
-          <Route path="/strukturOrganisasi">
+          <Route path="/struktur-organisasi">
             <StrukturOrganisasi />
           </Route>
-          <Route path="/susunanOrganisasi">
+          <Route path="/susunan-organisasi">
             <SusunanOrganisasi />
           </Route>
           <Route path="/laporan">

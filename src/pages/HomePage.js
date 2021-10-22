@@ -45,7 +45,7 @@ function HomePage() {
     textAlign: 'justify',
   }
 
-  const produk = {
+  const produkTitle = {
     color:'#cacaca',
     textAlign:'center',
     paddingBottom: '1.5rem',
@@ -56,6 +56,7 @@ function HomePage() {
     height:'20rem',
     width:'20rem',
     borderRadius: '0.5rem',
+    boxShadow: '0px 0px 40px #333333'
   }
   const visi = {
     fontSize: '1.7rem',
@@ -106,8 +107,8 @@ function HomePage() {
       </Container>
 
       {/* produk */}
-      <Container fluid='true' className="justify-content-center py-5 bg-rb">
-      <h1 className='rubik-bold' style={produk}>Produk Kami</h1>
+      <Container fluid='true' className="justify-content-center py-5 bg-pp">
+      <h1 className='rubik-bold' style={produkTitle}>Produk Kami</h1>
         <Row className='mx-auto' style={{width:'80vw'}}>
           <Col>
             <div style={produkCard} className='bg-gw my-5 mx-auto'>
@@ -120,7 +121,7 @@ function HomePage() {
         </Row>
       </Container>
 
-      <div style={{height:'2px'}} className='bg-gw'></div>
+      {/* <div style={{height:'2px'}} className='bg-gw'></div> */}
     </>
   );
 }

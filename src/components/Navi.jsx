@@ -35,13 +35,13 @@ function Navi() {
                   title="Tentang kami"
                   id="drop-about"
                 >
-                  <NavDropdown.Item href="/visiMisi">
+                  <NavDropdown.Item href="/visi-misi">
                     Visi Misi
                   </NavDropdown.Item>
-                  <NavDropdown.Item href="/strukturOrganisasi">
+                  <NavDropdown.Item href="/struktur-organisasi">
                     Struktur Organisasi
                   </NavDropdown.Item>
-                  <NavDropdown.Item href="/susunanOrganisasi">
+                  <NavDropdown.Item href="/susunan-organisasi">
                     Susunan Organisasi
                   </NavDropdown.Item>
                   <NavDropdown.Divider/>
@@ -56,20 +56,20 @@ function Navi() {
                   <NavDropdown.Item href="/ziswaf">Ziswaf</NavDropdown.Item>
                 </NavDropdown> */}
                 <NavDropdown title="Anggota" id="drop-member">
-                  <NavDropdown.Item href="/pendaftaranAnggota">
+                  <NavDropdown.Item href="/pendaftaran-anggota">
                     Pendaftaran Anggota
                   </NavDropdown.Item>
-                  <NavDropdown.Item href="/daftarAnggota">
+                  <NavDropdown.Item href="/daftar-anggota">
                     Daftar Anggota
                   </NavDropdown.Item>
                 </NavDropdown>
-                <Nav.Link eventKey="media" href="/Media">
+                <Nav.Link eventKey="media" href="/media">
                   Media
                 </Nav.Link>
                 <NavDropdown title="Karir" id="drop-career">
                   <NavDropdown.Item href="">lorem</NavDropdown.Item>
                 </NavDropdown>
-                <Nav.Link href="/Kontak">Kontak</Nav.Link>
+                <Nav.Link href="/kontak">Kontak</Nav.Link>
               </Nav>
           </Navbar.Collapse>
       
