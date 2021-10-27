@@ -100,7 +100,7 @@ function HomePage() {
             meningkatkan kesejahteraan lahir dan bathin masyarakat Indonesia menuju kebaikan di dunia dan di akhirat 
             </p>
             <div style={link}>
-              <a className='rubik link' href='/visiMisi' >lihat selengkapnya --></a>
+              <a className='rubik link' href='/visi-misi' >lihat selengkapnya --></a>
             </div>
           </Col>
         </Row>
