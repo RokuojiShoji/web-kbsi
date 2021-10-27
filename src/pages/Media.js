@@ -10,7 +10,7 @@ function Media () {
 	return (
 		<Container>
 			<Col>
-				<div style={{height:'10px'}}></div>
+				<div style={{height:'10px'}} />
 				<MediaCard 
 					side='left'
 					year='2011'
@@ -24,6 +24,7 @@ function Media () {
 					url1={rat20131}
 					url2={rat20132}
 				/>
+				<div style={{height:'10px'}} />
 			</Col>
 		</Container>
 	)
