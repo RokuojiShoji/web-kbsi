@@ -13,7 +13,7 @@ function Navi() {
   return (
     <>
     <Navbar
-      className="fixed-top product transition"
+      className="fixed-top product nav-transition"
       style={font1}
       variant="dark"
       expand="md"
@@ -26,7 +26,7 @@ function Navi() {
        
           <Navbar.Toggle aria-controls="basic-navbar-nav" />
           <Navbar.Collapse className="justify-content-end">
-              <Nav className="w-75 justify-content-around">
+              <Nav style={{width:'60%'}} className="justify-content-around">
                 <Nav.Link eventKey="home" href="/home">
                   Home
                 </Nav.Link>
@@ -49,12 +49,11 @@ function Navi() {
                     Laporan
                   </NavDropdown.Item>
                 </NavDropdown>
-                <Nav.Link href="/produk">Produk</Nav.Link>
-                {/* <NavDropdown title="Produk" id="drop-product">
-                  <NavDropdown.Item href="/simpanan">Simpanan</NavDropdown.Item>
+                {/* <Nav.Link href="/produk">Produk</Nav.Link> */}
+                <NavDropdown title="Produk" id="drop-product">
+                  <NavDropdown.Item href="/tabungan">Tabungan</NavDropdown.Item>
                   <NavDropdown.Item href="/pembiayaan">Pembiayaan</NavDropdown.Item>
-                  <NavDropdown.Item href="/ziswaf">Ziswaf</NavDropdown.Item>
-                </NavDropdown> */}
+                </NavDropdown>
                 <NavDropdown title="Anggota" id="drop-member">
                   <NavDropdown.Item href="/pendaftaran-anggota">
                     Pendaftaran Anggota
@@ -66,10 +65,10 @@ function Navi() {
                 <Nav.Link eventKey="media" href="/media">
                   Media
                 </Nav.Link>
-                <NavDropdown title="Karir" id="drop-career">
+                {/* <NavDropdown title="Karir" id="drop-career">
                   <NavDropdown.Item href="">lorem</NavDropdown.Item>
                 </NavDropdown>
-                <Nav.Link href="/kontak">Kontak</Nav.Link>
+                <Nav.Link href="/kontak">Kontak</Nav.Link> */}
               </Nav>
           </Navbar.Collapse>
       

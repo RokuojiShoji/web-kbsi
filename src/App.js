@@ -14,8 +14,8 @@ import {
 import VisiMisi from "./pages/TentangKami/VisiMisi";
 import DaftarAnggota from "./pages/Anggota/DaftarAnggota";
 import PendaftaranAnggota from "./pages/Anggota/PendaftaranAnggota";
-    // import Pembiayaan from "./pages/Produk/Pembiayaan";
-    // import Simpanan from "./pages/Produk/Simpanan";
+import Pembiayaan from "./pages/Produk/Pembiayaan";
+import Tabungan from "./pages/Produk/Tabungan";
     // import Ziswaf from "./pages/Produk/Ziswaf";
 import Kontak from "./pages/Kontak";
 import HomePage from "./pages/HomePage";
@@ -38,8 +38,7 @@ function App() {
       nav.classList.add("sticky-top")
       nav.classList.add("navbar-scrolled")
       body.classList.remove("bg-pp")
-      body.classList.add("bg-gw")
-      
+      body.classList.add("bg-gw")  
     }
   });
 
@@ -57,18 +56,15 @@ function App() {
           <Route path="/pendaftaran-anggota">
             <PendaftaranAnggota />
           </Route>
-          <Route path="/produk">
+          {/* <Route path="/produk">
             <Produk />
-          </Route>
-          {/* <Route path="/pembiayaan">
+          </Route> */}
+          <Route path="/pembiayaan">
             <Pembiayaan />
           </Route>
-          <Route path="/simpanan">
-            <Simpanan />
+          <Route path="/tabungan">
+            <Tabungan />
           </Route>
-          <Route path="/ziswaf">
-            <Ziswaf />
-          </Route> */}
           <Route path="/struktur-organisasi">
             <StrukturOrganisasi />
           </Route>
