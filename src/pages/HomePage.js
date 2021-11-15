@@ -1,7 +1,6 @@
 import {Col, Row, Container} from "react-bootstrap";
 import { useEffect } from "react";
-import svgWallet from '../components/svgWallet'
-import wallet from '../image/logoBsi.png'
+import {FaWallet, FaHandHoldingUsd} from 'react-icons/fa'
 
 function HomePage() {
   useEffect(() => {
@@ -53,10 +52,14 @@ function HomePage() {
   }
 
   const produkCard ={
+    display: 'flex',
+    flexDirection: 'column',
     height:'20rem',
     width:'20rem',
     borderRadius: '0.5rem',
-    boxShadow: '0px 0px 40px #333333'
+    boxShadow: '0px 0px 40px #333333',
+    padding: '3rem',
+    textDecoration: 'none',
   }
   const visi = {
     fontSize: '1.7rem',
@@ -69,13 +72,26 @@ function HomePage() {
     textAlign: 'right',
   }
 
+
+  const prodIcon = {
+    height: '6.5rem',
+    width: '6.5rem',
+    margin: 'auto'
+  }
+
+  const prodName = {
+    height: '20%',
+    textAlign: 'center',
+    verticalAlign: 'middle',
+  }
+
   return (
     <>
       {/* intro */}
       <Container fluid="true" className="intro bg-img g-0 align-items-center">
         <div style={spacer}></div>
         <Col  style={im} className="text-center start">
-          <h1 className='rubik-550'style={{fontSize:'3.5rem'}}>Siapa Kami ?</h1>
+          <h1 className='rubik-bold'style={{fontSize:'3.5rem'}}>Siapa Kami ?</h1>
         </Col>
       </Container>
       <Container style={{width:'60vw'}} className="my-5">
@@ -111,12 +127,16 @@ function HomePage() {
       <h1 className='rubik-bold' style={produkTitle}>Produk Kami</h1>
         <Row className='mx-auto' style={{width:'80vw'}}>
           <Col>
-            <div style={produkCard} className='bg-gw my-5 mx-auto'>
-              <img></img>
-            </div>
+            <a href='/tabungan' style={produkCard} className='product-card my-5 mx-auto'>
+              <FaWallet style={prodIcon} />
+              <h3 style={prodName} className='rubik-bold'>Tabungan</h3>
+            </a>
           </Col>
           <Col >
-            <div style={produkCard} className='bg-gw my-5 mx-auto'></div>
+            <a href='/pembiayaan' style={produkCard} className='product-card my-5 mx-auto'>
+              <FaHandHoldingUsd style={prodIcon} />
+              <h3 style={prodName} className='rubik-bold'>Pembiayaan</h3>
+            </a>
           </Col>
         </Row>
       </Container>
