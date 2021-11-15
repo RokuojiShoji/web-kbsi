@@ -2,7 +2,9 @@ import { Col, Container, Row } from "react-bootstrap";
 import ProductCard from "../../components/ProductCard";
 import Separator from "../../components/Separator";
 
-function Pembiayaan () {
+
+function Tabungan () {
+	
 	const head = {
 		textAlign: 'center',
 		color: '#696969',
@@ -13,34 +15,34 @@ function Pembiayaan () {
     <Container>
       <Col>
         <Separator height="5rem" />
-        <h1 style={head} className='rubik-bold'>Pembiayaan</h1>
+        <h1 style={head} className='rubik-bold'>Tabungan</h1>
         <Separator height="3rem" />
         <Row className="justify-content-around">
           <ProductCard 
-            type='Pembiayaan 1'
-            explain='penjelasan singkat Pembiayaan 1'
+            type='Tabungan 1'
+            explain='penjelasan singkat Tabungan 1'
           />
 					<ProductCard 
-             type='Pembiayaan 2'
-             explain='penjelasan singkat Pembiayaan 2'
+             type='Tabungan 2'
+             explain='penjelasan singkat Tabungan 2'
           />
 					<ProductCard 
-             type='Pembiayaan 3'
-             explain='penjelasan singkat Pembiayaan 3'
+             type='Tabungan 3'
+             explain='penjelasan singkat Tabungan 3'
           />
         </Row>
         <Row ClassName='justify-content-around'>
           <ProductCard 
-            type='Pembiayaan 4'
-            explain='penjelasan singkat Pembiayaan 4'
+            type='Tabungan 4'
+            explain='penjelasan singkat Tabungan 4'
           />
 					<ProductCard 
-             type='Pembiayaan 5'
-             explain='penjelasan singkat Pembiayaan 5'
+             type='Tabungan 5'
+             explain='penjelasan singkat Tabungan 5'
           />
 					<ProductCard 
-             type='Pembiayaan 6'
-             explain='penjelasan singkat Pembiayaan 6'
+             type='Tabungan 6'
+             explain='penjelasan singkat Tabungan 6'
           />
         </Row>
 
@@ -51,4 +53,4 @@ function Pembiayaan () {
   );
 }
 
-export default Pembiayaan;
+export default Tabungan;

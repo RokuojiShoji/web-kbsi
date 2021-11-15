@@ -8,18 +8,18 @@ export default function VisiMisiCard() {
     marginBottom: "5%",
     borderRadius: "6px",
     padding: "2rem",
-		color: "#cacaca"
+		color: "#eeeeee"
   };
 
 	const par = {
 		textAlign: "justify",
-		textAlignLast: "justify",
+		textAlignLast: "center",
 		fontSize: "1.4rem"
 	}
 
 	const lis = {
 		textAlign: "justify",
-		textAlignLast: "justify",
+		textAlignLast: "left",
 		fontSize: "1.4rem",
 		padding: "0.5rem"
 	}
