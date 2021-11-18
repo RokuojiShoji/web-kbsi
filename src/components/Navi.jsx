@@ -34,6 +34,7 @@ function Navi() {
                   eventKey="about"
                   title="Tentang kami"
                   id="drop-about"
+                  className='animate'
                 >
                   <NavDropdown.Item href="/visi-misi">
                     Visi Misi

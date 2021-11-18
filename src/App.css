@@ -137,3 +137,6 @@ li {
     /* border-style: ; */
 }
 
+.dropdown-menu {
+    transition: 0.3s;
+}
