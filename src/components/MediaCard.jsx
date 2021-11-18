@@ -1,7 +1,5 @@
 import React from "react";
 import { Carousel, CarouselItem, Col, Container, Row } from "react-bootstrap";
-import mat191 from "../image/MAT TB 2019/mat-19-1.jpg";
-import mat192 from "../image/MAT TB 2019/mat-19-2.jpg";
 
 function ImgSlide(props) {
   const imgStyle = {
@@ -11,7 +9,7 @@ function ImgSlide(props) {
   };
 
   return (
-    <Carousel nextIcon="" prevIcon="">
+    <Carousel nextIcon="" prevIcon="" indicatorLabels="" >
       {props.src1 != null && (
         <CarouselItem>
           <img src={props.src1} style={imgStyle} />
@@ -36,14 +34,40 @@ export default function MediaCard(props) {
     textAlign: "center",
     margin: "auto",
   };
-  const line = {
-    borderLeft: "2px solid #696969",
-    borderRight: "2px solid #696969",
-    height: "45%",
-    width: "1px",
-    marginLeft: "auto",
-    marginRight: "auto",
-  };
+
+  var line, year
+
+  if (props.year != null) {
+    line = {
+      borderLeft: "2px solid #696969",
+      borderRight: "2px solid #696969",
+      height: "45%",
+      width: "1px",
+      marginLeft: "auto",
+      marginRight: "auto",
+    };
+    year = {
+      color: "#696969",
+      height: '10%',
+      textAlign: "center"
+    };
+
+  } else {
+    line = {
+      borderLeft: "2px solid #696969",
+      borderRight: "2px solid #696969",
+      height: "50%",
+      width: "1px",
+      marginLeft: "auto",
+      marginRight: "auto",
+    };
+    year = {
+      color: "#696969",
+      height: '0%',
+      textAlign: "center"
+    };
+  }
+  
   return (
     <Row className="justify-content-center">
       {props.side == 'left' && (
@@ -53,8 +77,8 @@ export default function MediaCard(props) {
       </Col>
       <Col xl="1" className="g-0 justify-content-center">
         <Row style={line} />
-        <Row style={{ height: "10%" }}>
-          <p style={{ color: "#696969", margin: "auto", textAlign: "center" }}>
+        <Row style={year}>
+          <p style={{ margin: "auto"}}>
             {props.year}
           </p>
         </Row>
@@ -73,8 +97,8 @@ export default function MediaCard(props) {
       </Col>
       <Col xl="1" className="g-0 justify-content-center">
         <Row style={line} />
-        <Row style={{ height: "10%" }}>
-          <p style={{ color: "#696969", margin: "auto", textAlign: "center" }}>
+        <Row style={year}>
+          <p style={{margin: "auto"}}>
             {props.year}
           </p>
         </Row>
