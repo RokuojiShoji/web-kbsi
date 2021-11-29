@@ -4,6 +4,8 @@
 /****************HOMEPAGE*********************/
 .start {
     animation: startText 0.75s;
+    animation-delay: 0.3s;
+    animation-fill-mode: backwards;
 }
 @keyframes startText {
     from {
@@ -130,7 +132,15 @@ li {
     transition-duration: 0.5s;
 }
 
-
+.product-tab {
+    line-height: 3rem;
+    font-size: 1.2rem; 
+    color: darkgray;
+}
+.product-tab .sub-tab {
+    color:rgb(122, 122, 122) !important;
+    padding-left: 1.5rem;
+}
 .template {
     color: #616161;
     box-shadow: 5px 5px 5px #7c7c7c;

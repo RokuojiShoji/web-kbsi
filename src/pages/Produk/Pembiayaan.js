@@ -1,6 +1,7 @@
 import { Col, Container, Row } from "react-bootstrap";
 import ProductCard from "../../components/ProductCard";
 import Separator from "../../components/Separator";
+import TabDetailProduk from "./Detail Produk/TabDetailProduk";
 
 function Pembiayaan () {
 	const head = {
@@ -45,7 +46,7 @@ function Pembiayaan () {
         </Row>
 
 				<Separator height='5rem' />
-
+        <TabDetailProduk />
       </Col>
     </Container>
   );
