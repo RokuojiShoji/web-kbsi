@@ -10,6 +10,7 @@ function Navi() {
     fontSize: '1.1rem'
   }
   
+  
   return (
     <>
     <Navbar
@@ -19,7 +20,7 @@ function Navi() {
       expand="md"
     >
       <Container>
-        
+  
           <Navbar.Brand href="/home">
             <img className="padr-4" src={logo} height="38rem" alt="logo bsi"/>
           </Navbar.Brand>
@@ -34,7 +35,6 @@ function Navi() {
                   eventKey="about"
                   title="Tentang kami"
                   id="drop-about"
-                  className='animate'
                 >
                   <NavDropdown.Item href="/visi-misi">
                     Visi Misi

@@ -32,7 +32,9 @@ function App() {
   useEffect(() => {
     const isHome = window.location.pathname;
     const nav = document.querySelector("nav");
-    const body = document.querySelector("body")
+    const body = document.querySelector("body");
+    const drop = document.querySelector('a.dropdown-toggle')
+    console.log(drop)
     if (isHome !== "/home") {
       nav.classList.add("nav-scrolled");
       nav.classList.add("sticky-top")
@@ -42,6 +44,7 @@ function App() {
     }
   });
 
+  
   return (
     <Container fluid="true">
       <Router>
