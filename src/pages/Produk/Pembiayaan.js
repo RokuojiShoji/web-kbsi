@@ -46,7 +46,6 @@ function Pembiayaan () {
         </Row>
 
 				<Separator height='5rem' />
-        <TabDetailProduk />
       </Col>
     </Container>
   );
