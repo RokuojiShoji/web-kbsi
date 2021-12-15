@@ -1,5 +1,6 @@
 import "./App.css";
 import "./Font.css";
+import "jquery/dist/jquery.min.js";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "bootstrap/dist/js/bootstrap.min.js";
 import Navi from "./components/Navi.jsx";
@@ -28,6 +29,7 @@ import Laporan from "./pages/TentangKami/Laporan";
 import { useEffect } from "react";
 
 function App() {
+
 
   useEffect(() => {
     const isHome = window.location.pathname;
