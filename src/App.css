@@ -99,18 +99,30 @@ li {
 }
 /****************FOOTER***********************/
 .footer {
-    height: 280px;
+    height: 220px;
 }
 
-.footer-top {
-    height: 100%;
-    justify-content: center;
+.footer-media {
+    height: 20%;
+    justify-content: space-around;
     align-items: center ;
 }
 
+.footer-logo {
+    height: 45%;
+    justify-content: center;
+}
+
+.footer-nav {
+    height: 20%;
+    justify-content: center;
+}
+
+
 .footer-bottom {
-    height: 7%;
-    color:#9b137d;
+    height: 10%;
+    color:#F0EFF4;
+    padding-top: 1rem;
 }
 
 .intro {
