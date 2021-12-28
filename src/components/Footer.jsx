@@ -25,7 +25,7 @@ export default function Footer () {
         </Row>
         <Row className="g-0 footer-media w-25 mx-auto">
           <a style={{width:'auto'}} href='https://www.instagram.com/baiturrahimsyariah'><FaInstagram style={mediaIcon}/></a>
-          <a style={{width:'auto'}} href='https://wa.me/+6285104711175'><FaWhatsapp style={mediaIcon}/></a>
+          <a style={{width:'auto'}} href='https:/gi/wa.me/+6285104711175'><FaWhatsapp style={mediaIcon}/></a>
           <a style={{width:'auto'}} href='https://t.me/Kopbsi'><FaTelegram style={mediaIcon}/></a>
           <a style={{width:'auto'}} href='https://goo.gl/maps/UwyJN33t56aMbeve6'><MdLocationOn style={mediaIcon}/></a>
         </Row>
