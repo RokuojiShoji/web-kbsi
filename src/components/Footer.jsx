@@ -27,7 +27,7 @@ export default function Footer () {
         <a style={{width:'auto'}} href='https://t.me/Kopbsi'><SiTelegram className='mx-1' style={mediaIcon}/></a>
           <a style={{width:'auto'}} href='https://www.instagram.com/baiturrahimsyariah'><SiInstagram style={mediaIcon}/></a>
           <a style={{width:'auto'}} href='https://goo.gl/maps/UwyJN33t56aMbeve6'><MdLocationPin style={mediaIcon}/></a>
-          <a style={{width:'auto'}} href='https:/gi/wa.me/+6285104711175'><SiWhatsapp style={mediaIcon}/></a>
+          <a style={{width:'auto'}} href='https://wa.me/+6285104711175'><SiWhatsapp style={mediaIcon}/></a>
           <a style={{width:'auto'}} href='https://www.facebook.com/baiturrahimsyariah/'><SiFacebook className='mx-1' style={mediaIcon}/></a>
         </Row>
         {/* <Row className="footer-mail"></Row> */}
