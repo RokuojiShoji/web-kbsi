@@ -44,7 +44,6 @@ function Pembiayaan () {
              explain='penjelasan singkat Pembiayaan 6'
           />
         </Row>
-
 				<Separator height='5rem' />
       </Col>
     </Container>

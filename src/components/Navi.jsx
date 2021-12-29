@@ -50,12 +50,12 @@ function Navi() {
                 <li>
                   <a className='dropdown-item' href='/susunan-organisasi'>Susunan Organisasi</a>
                 </li>
-                <li>
+                {/* <li>
                   <hr className="dropdown-divider"></hr>
                 </li>
                 <li>
                   <a className="dropdown-item" href="/laporan">Laporan</a>
-                </li>
+                </li> */}
               </ul>
             </li>
             <li className="nav-item dropdown">

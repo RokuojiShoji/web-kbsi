@@ -35,9 +35,8 @@ function App() {
     const isHome = window.location.pathname;
     const nav = document.querySelector("nav");
     const body = document.querySelector("body");
-    const drop = document.querySelector('a.dropdown-toggle')
-    console.log(drop)
     if (isHome !== "/home") {
+      nav.classList.remove("nav-transition")
       nav.classList.add("nav-scrolled");
       nav.classList.add("sticky-top")
       nav.classList.add("navbar-scrolled")
@@ -76,9 +75,9 @@ function App() {
           <Route path="/susunan-organisasi">
             <SusunanOrganisasi />
           </Route>
-          <Route path="/laporan">
+          {/* <Route path="/laporan">
             <Laporan />
-          </Route>
+          </Route> */}
           <Route path="/kontak">
             <Kontak />
           </Route>
