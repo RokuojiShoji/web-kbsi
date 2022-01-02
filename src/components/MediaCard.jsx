@@ -1,5 +1,5 @@
 import React from "react";
-import { Carousel, CarouselItem, Col, Container, Row } from "react-bootstrap";
+import { Carousel, CarouselItem, Col, Row } from "react-bootstrap";
 
 function ImgSlide(props) {
   const imgStyle = {
@@ -12,17 +12,17 @@ function ImgSlide(props) {
     <Carousel nextIcon="" prevIcon="" indicatorLabels="" >
       {props.src1 != null && (
         <CarouselItem>
-          <img src={props.src1} style={imgStyle} />
+          <img alt ='carouselImg' src={props.src1} style={imgStyle} />
         </CarouselItem>
       )}
       {props.src2 != null && (
         <CarouselItem>
-          <img src={props.src2} style={imgStyle}/>
+          <img alt ='carouselImg' src={props.src2} style={imgStyle}/>
         </CarouselItem>
       )}
       {props.src3 != null && (
         <CarouselItem>
-          <img src={props.src3} style={imgStyle}/>
+          <img alt ='carouselImg' src={props.src3} style={imgStyle}/>
         </CarouselItem>
       )}
     </Carousel>
@@ -70,7 +70,7 @@ export default function MediaCard(props) {
   
   return (
     <Row className="justify-content-center">
-      {props.side == 'left' && (
+      {props.side === 'left' && (
       <>		
 			<Col xl="5">
         <ImgSlide src1={props.url1} src2={props.url2} src3={props.url3} />
@@ -90,7 +90,7 @@ export default function MediaCard(props) {
 			</>
 			)}
 
-{props.side == 'right' && (
+{props.side === 'right' && (
       <>
 			<Col xl="5" className="justify-content-center d-flex">
 				<h2 style={text}>{props.text}</h2>

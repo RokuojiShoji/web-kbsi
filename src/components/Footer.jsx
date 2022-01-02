@@ -1,7 +1,7 @@
 import { Col, Container, Row } from "react-bootstrap";
 import "../App.css"
 import logo from "../image/logoBsi.png"
-import {SiGmail, SiWhatsapp, SiTelegram, SiInstagram, SiFacebook} from "react-icons/si"
+import {SiYoutube, SiGmail, SiWhatsapp, SiTelegram, SiInstagram, SiFacebook} from "react-icons/si"
 import {MdLocationPin} from 'react-icons/md'
 import Separator from "./Separator";
 export default function Footer () {
@@ -12,25 +12,27 @@ export default function Footer () {
     width: '40px',
     height: '40px'
   }
-  const alamat = {
-    textAlign: "left",
-    color: "#F0EFF4"
-  }
+  // const alamat = {
+  //   textAlign: "left",
+  //   color: "#F0EFF4"
+  // }
+
   return (
     <Container fluid="true">
       <Col className="footer bg-rb">
         <Separator height='1.5rem'/>
         <Row className="g-0 footer-logo">
-          <img src={logo} className='py-1' style={{height:'90%', width:'auto'}}/>
+          <img src={logo} alt='logoBsi' className='py-1' style={{height:'90%', width:'auto'}}/>
         </Row>
-        <Row className="g-0 footer-media w-25 mx-auto">
-        <a style={{width:'auto'}} href='https://t.me/Kopbsi'><SiTelegram className='mx-1' style={mediaIcon}/></a>
-          <a style={{width:'auto'}} href='https://www.instagram.com/baiturrahimsyariah'><SiInstagram style={mediaIcon}/></a>
-          <a style={{width:'auto'}} href='https://goo.gl/maps/UwyJN33t56aMbeve6'><MdLocationPin style={mediaIcon}/></a>
-          <a style={{width:'auto'}} href='https://wa.me/+6285104711175'><SiWhatsapp style={mediaIcon}/></a>
-          <a style={{width:'auto'}} href='https://www.facebook.com/baiturrahimsyariah/'><SiFacebook className='mx-1' style={mediaIcon}/></a>
+        <Row className="g-0 footer-media mx-auto" style={{width:'30%'}}>
+          <a style={{width:'auto'}} rel='noreferrer noopener' target='_blank' href='https://t.me/Kopbsi'><SiTelegram style={mediaIcon}/></a>
+          <a style={{width:'auto'}} rel='noreferrer noopener' target='_blank' href='https://wa.me/+6285104711175'><SiWhatsapp className='mx-1' style={mediaIcon}/></a>
+          <a style={{width:'auto'}} rel='noreferrer noopener' target='_blank' href='mailto:koperasibaiturrahimindonesia@gmail.com'><SiGmail style={mediaIcon}/></a>
+          <a style={{width:'auto'}} rel='noreferrer noopener' target='_blank' href='https://goo.gl/maps/UwyJN33t56aMbeve6'><MdLocationPin style={mediaIcon}/></a>
+          <a style={{width:'auto'}} rel='noreferrer noopener' target='_blank' href='https://www.youtube.com/channel/UCzjL4sTVwfcBNNei6b36wSQ'><SiYoutube style={mediaIcon}/></a>
+          <a style={{width:'auto'}} rel='noreferrer noopener' target='_blank' href='https://www.instagram.com/baiturrahimsyariah'><SiInstagram className='mx-1' style={mediaIcon}/></a>
+          <a style={{width:'auto'}} rel='noreferrer noopener' target='_blank' href='https://www.facebook.com/baiturrahimsyariah/'><SiFacebook style={mediaIcon}/></a>
         </Row>
-        {/* <Row className="footer-mail"></Row> */}
         <Separator height='2rem'/>
         <Row className="g-0 px-2 text-center justify-content-center footer-bottom bg-rb rubik">Copyright &copy; Koperasi bsi </Row>
       </Col>

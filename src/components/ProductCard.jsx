@@ -1,5 +1,5 @@
 import Button from "react-bootstrap/Button"
-import { Col, Container, Row } from "react-bootstrap"
+import { Col, Row } from "react-bootstrap"
 
 
 export default function ProductCard(props) {

@@ -96,9 +96,9 @@ function HomePage() {
       </Container>
       <Container style={{width:'60vw'}} className="my-5">
         <p style={ident}>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, 
-          quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat 
-          nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+          Koperasi Baiturrahim Syariah Indonesia adalah koperasi yang kegiatan usahanya bergerak di bidang pembiayaan,
+          investasi, dan simpanan sesuai pola bagi hasil dan jual beli tidak tunai yang disahkan menurut syariat Islam
+          dan tidak bertentangan dengan peraturan perundang-undangan Negara Kesatuan Republik Indonesia
         </p>
       </Container>
       

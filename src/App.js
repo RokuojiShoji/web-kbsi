@@ -13,7 +13,7 @@ import {
 } from "react-router-dom";
 
 import VisiMisi from "./pages/TentangKami/VisiMisi";
-import DaftarAnggota from "./pages/Anggota/DaftarAnggota";
+//import DaftarAnggota from "./pages/Anggota/DaftarAnggota";
 import PendaftaranAnggota from "./pages/Anggota/PendaftaranAnggota";
 import Pembiayaan from "./pages/Produk/Pembiayaan";
 import Tabungan from "./pages/Produk/Tabungan";
@@ -21,11 +21,11 @@ import Tabungan from "./pages/Produk/Tabungan";
 import Kontak from "./pages/Kontak";
 import HomePage from "./pages/HomePage";
 import Media from "./pages/Media";
-import Produk from "./pages/Produk";
+// import Produk from "./pages/Produk";
 import StrukturOrganisasi from "./pages/TentangKami/StrukturOrganisasi";
 import SusunanOrganisasi from "./pages/TentangKami/SusunanOrganisasi";
 import Footer from "./components/Footer";
-import Laporan from "./pages/TentangKami/Laporan";
+//import Laporan from "./pages/TentangKami/Laporan";
 import { useEffect } from "react";
 
 function App() {
@@ -54,9 +54,9 @@ function App() {
           <Route path="/visi-misi">
             <VisiMisi />
           </Route>
-          <Route path="/daftar-anggota">
+          {/* <Route path="/daftar-anggota">
             <DaftarAnggota />
-          </Route>
+          </Route> */}
           <Route path="/pendaftaran-anggota">
             <PendaftaranAnggota />
           </Route>

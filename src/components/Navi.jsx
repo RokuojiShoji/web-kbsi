@@ -1,7 +1,3 @@
-import Nav from "react-bootstrap/Nav";
-import Navbar from "react-bootstrap/Navbar";
-import NavDropdown from "react-bootstrap/NavDropdown";
-import { Container } from "react-bootstrap";
 import logo from "../image/logoBsi.png";
 
 function Navi() {
@@ -34,9 +30,9 @@ function Navi() {
               </a>
             </li>
             <li className="nav-item dropdown">
-              <a className="nav-link dropdown-toggle" href="#" id="dropdownMember" role="button" data-bs-toggle="dropdown" aria-expanded="false" >
+              <div className="nav-link dropdown-toggle" id="dropdownMember" role="button" data-bs-toggle="dropdown" aria-expanded="false" >
                 Tentang Kami
-              </a>
+              </div>
               <ul
                 className="dropdown-menu animate fade"
                 aria-labelledby="dropdownAbout"
@@ -47,9 +43,9 @@ function Navi() {
                 <li>
                   <a className="dropdown-item" href="/struktur-organisasi">Struktur Organisasi</a>
                 </li>
-                <li>
+                {/* <li>
                   <a className='dropdown-item' href='/susunan-organisasi'>Susunan Organisasi</a>
-                </li>
+                </li> */}
                 {/* <li>
                   <hr className="dropdown-divider"></hr>
                 </li>
@@ -59,9 +55,9 @@ function Navi() {
               </ul>
             </li>
             <li className="nav-item dropdown">
-              <a className="nav-link dropdown-toggle" href="#" id="dropdownAbout" role="button" data-bs-toggle="dropdown" aria-expanded="false" >
+              <div className="nav-link dropdown-toggle" id="dropdownAbout" role="button" data-bs-toggle="dropdown" aria-expanded="false" >
                 Produk
-              </a>
+              </div>
               <ul
                 className="dropdown-menu animate fade"
                 aria-labelledby="dropdownProduct"
@@ -75,9 +71,9 @@ function Navi() {
               </ul>
             </li>
             <li className="nav-item dropdown">
-              <a className="nav-link dropdown-toggle" href="#" id="dropdownProduct" role="button" data-bs-toggle="dropdown" aria-expanded="false" >
+              <div className="nav-link dropdown-toggle" id="dropdownProduct" role="button" data-bs-toggle="dropdown" aria-expanded="false" >
                 Anggota
-              </a>
+              </div>
               <ul
                 className="dropdown-menu animate fade"
                 aria-labelledby="dropdownMember"
@@ -85,9 +81,9 @@ function Navi() {
                 <li>
                   <a className="dropdown-item" href="/daftar-anggota">Daftar Anggota</a>
                 </li>
-                <li>
+                {/* <li>
                   <a className="dropdown-item" href="/pendaftaran">Pendaftaran</a>
-                </li>
+                </li> */}
               </ul>
             </li>
             <li className="nav-item">

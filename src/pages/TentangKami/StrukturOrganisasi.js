@@ -1,8 +1,12 @@
+import StructureCard from "../../components/StructureCard";
+import {Row} from 'react-bootstrap'
 function StrukturOrganisasi () {
 	return (
-		<p>
-			VISI MISI
-		</p>
+		<Row className='mx-auto justify-content-center'>
+			<StructureCard />
+
+			
+		</Row>
 	)
 }
 

@@ -1,4 +1,4 @@
-import { Container, Col, Row } from "react-bootstrap";
+import {Container, Col} from "react-bootstrap";
 import MediaCard from "../components/MediaCard";
 import Separator from "../components/Separator";
 

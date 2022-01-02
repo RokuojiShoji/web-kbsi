@@ -1,7 +1,6 @@
 import { Col, Container, Row } from "react-bootstrap";
 import ProductCard from "../../components/ProductCard";
 import Separator from "../../components/Separator";
-import TabDetailProduk from "./Detail Produk/TabDetailProduk";
 
 function Pembiayaan () {
 	const head = {
@@ -18,30 +17,26 @@ function Pembiayaan () {
         <Separator height="3rem" />
         <Row className="justify-content-around">
           <ProductCard 
-            type='Pembiayaan 1'
+            type='Murabahah'
             explain='penjelasan singkat Pembiayaan 1'
           />
 					<ProductCard 
-             type='Pembiayaan 2'
+             type='Al-Qard'
              explain='penjelasan singkat Pembiayaan 2'
           />
 					<ProductCard 
-             type='Pembiayaan 3'
+             type='Ijaroh'
              explain='penjelasan singkat Pembiayaan 3'
           />
         </Row>
         <Row ClassName='justify-content-around'>
           <ProductCard 
-            type='Pembiayaan 4'
+            type='Mudharabah'
             explain='penjelasan singkat Pembiayaan 4'
           />
 					<ProductCard 
-             type='Pembiayaan 5'
+             type='IMBT'
              explain='penjelasan singkat Pembiayaan 5'
-          />
-					<ProductCard 
-             type='Pembiayaan 6'
-             explain='penjelasan singkat Pembiayaan 6'
           />
         </Row>
 				<Separator height='5rem' />
