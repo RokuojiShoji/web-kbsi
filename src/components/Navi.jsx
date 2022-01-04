@@ -70,7 +70,7 @@ function Navi() {
                 </li>
               </ul>
             </li>
-            <li className="nav-item dropdown">
+            {/* <li className="nav-item dropdown">
               <div className="nav-link dropdown-toggle" id="dropdownProduct" role="button" data-bs-toggle="dropdown" aria-expanded="false" >
                 Anggota
               </div>
@@ -81,11 +81,11 @@ function Navi() {
                 <li>
                   <a className="dropdown-item" href="/daftar-anggota">Daftar Anggota</a>
                 </li>
-                {/* <li>
+                <li>
                   <a className="dropdown-item" href="/pendaftaran">Pendaftaran</a>
-                </li> */}
+                </li>
               </ul>
-            </li>
+            </li> */}
             <li className="nav-item">
               <a className="nav-link" href='/media' >Media</a>
             </li>

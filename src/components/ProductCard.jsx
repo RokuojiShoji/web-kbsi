@@ -1,5 +1,5 @@
 import Button from "react-bootstrap/Button"
-import { Col, Row } from "react-bootstrap"
+import { Col, Container, Row } from "react-bootstrap"
 
 
 export default function ProductCard(props) {
@@ -11,7 +11,7 @@ export default function ProductCard(props) {
 		borderRadius:'0.5rem',
 		boxShadow:'#cacaca 0px 0px 20px',
 		padding:'1.5rem',
-		margin: '2rem',
+		margin: '1rem',
 	}
 
 	const head = {
@@ -21,8 +21,10 @@ export default function ProductCard(props) {
 	}
 
 	const sub = {
-		color: '#cacaca',
-		fontSize: '0.9rem'
+		color: '#6f6f6f',
+		fontSize: '0.9rem',
+		textAlign: 'justify',
+		textAlignLast: 'left'
 	}
 
 	const tombol = {
@@ -35,20 +37,20 @@ export default function ProductCard(props) {
 
 	
 	return(
-		<>
-		<Col className='gx-0'style={style}>
+		<Container style={style}>
+		<Col className='gx-0'>
 			<Row style={{height:'10%'}}>
 				<h3 style={head} className='rubik-bold'>{props.type}</h3>
 			</Row>
 			<Row style={{height:'10%'}}>
 				<p style={sub} className='rubik-light'>{props.explain}</p>
 			</Row>
-			<Row style={{height:'80%', padding:'0rem 0.8rem'}}>
+			{/* <Row style={{height:'80%', padding:'0rem 0.8rem'}}>
 				<Button style ={tombol} className='bg-pp rubik align-self-end' size='lg'>
 					lihat selengkapnya
 				</Button>
-			</Row>	
+			</Row>	 */}
 		</Col>
-		</>
+		</Container>
 	)
 }
