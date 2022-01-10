@@ -1,4 +1,4 @@
-import Button from "react-bootstrap/Button"
+//import Button from "react-bootstrap/Button"
 import { Col, Container, Row } from "react-bootstrap"
 
 
@@ -27,13 +27,13 @@ export default function ProductCard(props) {
 		textAlignLast: 'left'
 	}
 
-	const tombol = {
-		borderRadius: '0.5rem',
-		borderStyle: 'none',
-		padding: '0.5rem 0.8rem',
-		fontSize: '1.1rem',
-		color: '#F0EFF4'
-	}
+	// const tombol = {
+	// 	borderRadius: '0.5rem',
+	// 	borderStyle: 'none',
+	// 	padding: '0.5rem 0.8rem',
+	// 	fontSize: '1.1rem',
+	// 	color: '#F0EFF4'
+	// }
 
 	
 	return(
