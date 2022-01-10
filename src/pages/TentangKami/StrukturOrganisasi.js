@@ -6,7 +6,7 @@ function StrukturOrganisasi () {
 	}
 	
 	return (
-		<Row className='p-0 m-1 justify-content-center'>
+		<Row className='mx-1 my-5 justify-content-center'>
 			<img style={style} src={strukturOrganisasi} alt="struktur organisasi"></img>
 		</Row>
 	)
