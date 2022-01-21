@@ -1,6 +1,6 @@
 import {Col, Row, Container} from "react-bootstrap";
 import { useEffect } from "react";
-import {FaWallet, FaHandHoldingUsd} from 'react-icons/fa'
+import {FaWallet, FaHandHoldingUsd, FaMoneyBillWave} from 'react-icons/fa'
 
 function HomePage() {
   useEffect(() => {
@@ -96,8 +96,8 @@ function HomePage() {
       </Container>
       <Container style={{width:'60vw'}} className="my-5">
         <p style={ident}>
-          Koperasi Baiturrahim Syariah Indonesia adalah koperasi yang kegiatan usahanya bergerak di bidang pembiayaan,
-          investasi, dan simpanan sesuai pola bagi hasil dan jual beli tidak tunai yang disahkan menurut syariat Islam
+          Koperasi Baiturrahim Syariah Indonesia adalah koperasi yang kegiatan usahanya bergerak di bidang simpanan,
+          pembiayaan, dan investasi sesuai pola bagi hasil dan jual beli tidak tunai yang disahkan menurut syariat Islam
           dan tidak bertentangan dengan peraturan perundang-undangan Negara Kesatuan Republik Indonesia
         </p>
       </Container>
@@ -136,6 +136,12 @@ function HomePage() {
             <a href='/pembiayaan' style={produkCard} className='product-card my-5 mx-auto'>
               <FaHandHoldingUsd style={prodIcon} />
               <h3 style={prodName} className='rubik-bold'>Pembiayaan</h3>
+            </a>
+          </Col>
+          <Col >
+            <a href='/investasi' style={produkCard} className='product-card my-5 mx-auto'>
+              <FaMoneyBillWave style={prodIcon} />
+              <h3 style={prodName} className='rubik-bold'>Investasi</h3>
             </a>
           </Col>
         </Row>

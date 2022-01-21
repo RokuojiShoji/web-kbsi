@@ -63,10 +63,13 @@ function Navi() {
                 aria-labelledby="dropdownProduct"
               >
                 <li>
+                  <a className="dropdown-item" href="/tabungan">Simpanan</a>
+                </li>
+                <li>
                   <a className="dropdown-item" href="/pembiayaan">Pembiayaan</a>
                 </li>
                 <li>
-                  <a className="dropdown-item" href="/tabungan">Tabungan</a>
+                  <a className="dropdown-item" href="/investasi">Investasi</a>
                 </li>
               </ul>
             </li>

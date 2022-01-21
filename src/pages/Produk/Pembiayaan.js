@@ -22,11 +22,11 @@ function Pembiayaan () {
           />
 					<ProductCard 
              type='Al-Qard'
-             explain='Pinjaman dari koperasi berupa uang tunai untuk kebutuhan pokok dan mendesak (ghorimin/terlilit hutang dan pengobatan).'
+             explain='Jasa pencarian pinjaman uang dan koperasi berhak menerima komisi jasa atau ujroh sebagai perantara'
           />
 					<ProductCard 
              type='Ijaroh'
-             explain='Pemindahan hak guna suatu barang dengan pembayaran biaya sewa tanpa diikuti pemindahan kepemilikan atas barang tersebut.'
+             explain='Pembiayaan dalam memenuhi kebutuhan atas manfaat akan suatu jasa '
           />
         </Row>
         <Row className='justify-content-center'>

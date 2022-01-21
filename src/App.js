@@ -17,6 +17,7 @@ import VisiMisi from "./pages/TentangKami/VisiMisi";
 import PendaftaranAnggota from "./pages/Anggota/PendaftaranAnggota";
 import Pembiayaan from "./pages/Produk/Pembiayaan";
 import Tabungan from "./pages/Produk/Tabungan";
+import Investasi from "./pages/Produk/Investasi";
     // import Ziswaf from "./pages/Produk/Ziswaf";
 import Kontak from "./pages/Kontak";
 import HomePage from "./pages/HomePage";
@@ -68,6 +69,9 @@ function App() {
           </Route>
           <Route path="/tabungan">
             <Tabungan />
+          </Route>
+          <Route path="/investasi">
+            <Investasi />
           </Route>
           <Route path="/struktur-organisasi">
             <StrukturOrganisasi />
