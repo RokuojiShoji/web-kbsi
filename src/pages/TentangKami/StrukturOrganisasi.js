@@ -1,4 +1,4 @@
-import strukturOrganisasi from '../../image/strukturOrganisasi.png'
+import struktur from '../../image/struktur.png'
 import {Row} from 'react-bootstrap'
 function StrukturOrganisasi () {
 	const style = {
@@ -7,7 +7,7 @@ function StrukturOrganisasi () {
 	
 	return (
 		<Row className='mx-1 my-5 justify-content-center'>
-			<img style={style} src={strukturOrganisasi} alt="struktur organisasi"></img>
+			<img style={style} src={struktur} alt="struktur organisasi"></img>
 		</Row>
 	)
 }

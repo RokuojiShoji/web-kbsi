@@ -1,5 +1,6 @@
 import { Col, Container, Row } from "react-bootstrap";
 import ProductCard from "../../components/ProductCard";
+import ProductCardGambar from "../../components/ProductCardGambar";
 import Separator from "../../components/Separator";
 
 
@@ -46,11 +47,11 @@ function Tabungan () {
           />
         </Row>
         <Row className='justify-content-center'>
-					<ProductCard 
+					<ProductCardGambar 
              type='Shaum'
              explain='Shaum atau Simpanan Haji dan Umroh merupakan simpanan yang digunakan untuk perisapan ibadah Haji dan Umroh'
           />
-					<ProductCard 
+					<ProductCardGambar 
              type='Sawal'
              explain='Sawal atau Simpanan Walimah merupakan simpanan yang dipersiapkan untuk pelaksanaan walimah pencairan dapa dilakukan menjelang pernikahan'
           />

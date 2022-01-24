@@ -129,7 +129,7 @@ function HomePage() {
           <Col>
             <a href='/tabungan' style={produkCard} className='product-card my-5 mx-auto'>
               <FaWallet style={prodIcon} />
-              <h3 style={prodName} className='rubik-bold'>Tabungan</h3>
+              <h3 style={prodName} className='rubik-bold'>Simpanan</h3>
             </a>
           </Col>
           <Col >

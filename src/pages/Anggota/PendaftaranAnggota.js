@@ -2,7 +2,7 @@ import { Container, Row, Col, Form, Button, FormText } from 'react-bootstrap'
 import emailjs, { init } from '@emailjs/browser'
 import React, { useRef, useState } from 'react'
 import Separator from '../../components/Separator'
-import {Redirect} from 'react-router-dom'
+import { Redirect } from 'react-router-dom'
 
 init('user_COW0bZlVe8lhcgD9ObueN')
 
@@ -16,8 +16,8 @@ function FormMaster(props) {
 	const formStyle = {
 		fontSize: '0.9rem'
 	}
-	
-	return(
+
+	return (
 		<Form.Group className="mb-2">
 			<Form.Label style={label}>{props.label}</Form.Label>
 			<Form.Control style={formStyle} type={props.type} name={props.name} placeholder={props.placeholder} />
@@ -28,16 +28,16 @@ function FormMaster(props) {
 
 function Confirmation() {
 	const style = {
-		width:'80%',
-		color:'#cacaca',
-		fontSize:'1rem',
-		borderRadius:'0.3rem',
-		textAlign:'center',
-		padding:'1rem',
-		margin:'1rem auto 1.5rem auto'
+		width: '80%',
+		color: '#cacaca',
+		fontSize: '1rem',
+		borderRadius: '0.3rem',
+		textAlign: 'center',
+		padding: '1rem',
+		margin: '1rem auto 1.5rem auto'
 	}
 
-	return(
+	return (
 		<Container style={style} className='bg-pp'>
 			Data anda sudah terkirim!
 		</Container>
@@ -47,7 +47,7 @@ function Confirmation() {
 function PendaftaranAnggota() {
 
 	const form = useRef();
-  const [show, setShow] = useState(false)
+	const [show, setShow] = useState(false)
 	const sendEmail = (e) => {
 		e.preventDefault();
 
@@ -64,7 +64,7 @@ function PendaftaranAnggota() {
 				console.log(error.text);
 			});
 
-		
+
 	};
 
 	const contain = {
@@ -72,10 +72,10 @@ function PendaftaranAnggota() {
 	}
 
 	const header = {
-		textAlign:'center',
+		textAlign: 'center',
 		color: '#636363',
-		marginTop:'3rem',
-		marginBottom:'4rem'
+		marginTop: '3rem',
+		marginBottom: '4rem'
 	}
 
 	return (
@@ -83,26 +83,36 @@ function PendaftaranAnggota() {
 			<h1 style={header} className='rubik-bold'>Form Pendaftaran Anggota</h1>
 			<Container style={contain} className='rubik-light w-50 bg-rb mt-2 mb-2 py-3'>
 				{
-				show?<Confirmation />
-				:null
-				} 
+					show ? <Confirmation />
+						: null
+				}
 				<Form ref={form} onSubmit={sendEmail}>
-					<FormMaster 
-						label='Nama Lengkap' 
-						type='text' 
+					<FormMaster
+						label='Nama Lengkap'
+						type='text'
 						name='namaLengkap'
 					/>
-					<FormMaster 
-						label='Nama Panggilan' 
-						type='text' 
-						name='namaPanggilan' 
+					<FormMaster
+						label='Nama Panggilan'
+						type='text'
+						name='namaPanggilan'
 					/>
-					<FormMaster 
-						label='Tempat / Tanggal Lahir' 
-						type='text' 
-						name='TTL' 
+					<FormMaster
+						label='NIK'
+						type='text'
+						name='nik'
+					/>
+					<FormMaster
+						label='Nama Ibu Kandung'
+						type='text'
+						name='nama ibu kandung'
+					/>
+					<FormMaster
+						label='Tempat / Tanggal Lahir'
+						type='text'
+						name='TTL'
 						placeholder='kota / hh-bb-tttt'
-						sub='Format = kota / hh-bb-tttt' 
+						sub='Format = kota / hh-bb-tttt'
 					/>
 					<FormMaster
 						label='Pekerjaan'
@@ -114,12 +124,12 @@ function PendaftaranAnggota() {
 						type='textarea'
 						name='alamat'
 						sub='masukkan alamat sesuai KTP'
-					/>	
+					/>
 
 					{/* <Form.Group className="mb-3" controlId="formBasicCheckbox">
 						<Form.Check style={label} type="checkbox" label="Check me out" />
 					</Form.Group> */}
-					<Separator height='2rem'/>
+					<Separator height='2rem' />
 					<div className='w-100'>
 						<Button className='' variant="primary" type="submit">
 							Submit
