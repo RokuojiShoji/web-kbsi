@@ -4,8 +4,11 @@ import { Carousel, CarouselItem, Col, Row } from "react-bootstrap";
 function ImgSlide(props) {
   const imgStyle = {
     display: "block",
-    width: "100%",
+    maxWidth:'100%',
+    maxHeight:'21rem',
     padding: "1rem",
+    marginLeft: "auto",
+    marginRight: "auto",
   };
 
   return (

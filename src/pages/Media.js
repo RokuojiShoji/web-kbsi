@@ -3,9 +3,11 @@ import MediaCard from "../components/MediaCard";
 import Separator from "../components/Separator";
 
 import rat20101 from '../image/RAT TB 2010/rat2010.jpg'
+import rattb121 from '../image/RAT TB 2012/rattb121.jpg'
+import rattb122 from '../image/RAT TB 2012/rattb122.jpg'
+import rattb123 from '../image/RAT TB 2012/rattb123.jpg'
 import rat20131 from '../image/RAT TB 2013/rat20131.jpg'
 import rat20132 from '../image/RAT TB 2013/rat20132.jpg'
-import rat20141 from '../image/RAT TB 2014/RAT-14-1.jpg'
 import mat20161 from '../image/MAT TB 2016/mat-2016.jpg'
 import mat20191 from '../image/MAT TB 2019/mat-19-1.jpg'
 import mat20192 from '../image/MAT TB 2019/mat-19-2.jpg'
@@ -14,6 +16,7 @@ import bazaar1 from '../image/Bazaar/b1.jpg'
 import kantorLama from '../image/Kantor Lama/kanlam.jpg'
 import rihlahJungle from '../image/Ke Hutan/hutan.jpg'
 import rihlahPangandaran from '../image/Ke Pantai/pantai.jpg'
+import kantorBaru from '../image/kantor baru.jpg'
 
 function Media () {
 	return (
@@ -28,16 +31,18 @@ function Media () {
 				/>
 				<MediaCard 
 					side='right'
+					year='2013'
+					text='RAT TB 2012'
+					url1={rattb121}
+					url2={rattb122}
+					url3={rattb123}
+				/>
+				<MediaCard 
+					side='left'
 					year='2014'
 					text='RAT TB 2013'
 					url1={rat20131}
 					url2={rat20132}
-				/>
-				<MediaCard 
-					side='left'
-					year='2015'
-					text='RAT TB 2014'
-					url1={rat20141}
 				/>
 				<MediaCard
 					side='right'
@@ -46,24 +51,24 @@ function Media () {
 					url1={bankSampah}
 				/>
 				<MediaCard 
-					side='right'
+					side='left'
 					text='MAT TB 2016'
 					url1={mat20161}
 				/>
 				<MediaCard
-					side='left'
+					side='right'
 					year='2017'
 					text='Kantor Lama bsi'
 					url1={kantorLama}
 				/>
 				<MediaCard
-					side='right'
+					side='left'
 					year='2019'
 					text='Rihlah ke The Jungle'
 					url1={rihlahJungle}
 				/>
 				<MediaCard
-					side='left'
+					side='right'
 					year='2020'
 					text='Rihlah ke Pangandaran'
 					url1={rihlahPangandaran}
@@ -74,15 +79,15 @@ function Media () {
 					url1={mat20191}
 					url2={mat20192}
 				/>
-				<Separator height='1rem' />
 				<MediaCard
 					side='right'
 					year='2021'
 					text='Kantor Baru bsi'
-					url1={bazaar1}
+					url1={kantorBaru}
 				/>
+				<Separator height='1rem' />
 				<MediaCard
-					side='right'
+					side='left'
 					text='bazaar'
 					url1={bazaar1}
 				/>
