@@ -28,6 +28,16 @@ function ImgSlide(props) {
           <img alt ='carouselImg' src={props.src3} style={imgStyle}/>
         </CarouselItem>
       )}
+      {props.src4 != null && (
+        <CarouselItem>
+          <img alt ='carouselImg' src={props.src4} style={imgStyle}/>
+        </CarouselItem>
+      )}
+      {props.src5 != null && (
+        <CarouselItem>
+          <img alt ='carouselImg' src={props.src5} style={imgStyle}/>
+        </CarouselItem>
+      )}
     </Carousel>
   );
 }
@@ -76,7 +86,7 @@ export default function MediaCard(props) {
       {props.side === 'left' && (
       <>		
 			<Col xl="5">
-        <ImgSlide src1={props.url1} src2={props.url2} src3={props.url3} />
+        <ImgSlide src1={props.url1} src2={props.url2} src3={props.url3} src4={props.url4} src5={props.url5}/>
       </Col>
       <Col xl="1" className="g-0 justify-content-center">
         <Row style={line} />
@@ -108,7 +118,7 @@ export default function MediaCard(props) {
         <Row style={line} />
       </Col>
       <Col xl="5" >
-				<ImgSlide src1={props.url1} src2={props.url2} src3={props.url3} />
+				<ImgSlide src1={props.url1} src2={props.url2} src3={props.url3} src4={props.url4} src5={props.url5}/>
       </Col>
 			</>
 			)}

@@ -100,9 +100,11 @@ function Media () {
 				<MediaCard
 					side='right'
 					text='Tim Baiturrahim Syariah'
-					url1={2015}
-					url2={2016}
-					url3={2018}
+					url1={tim2015}
+					url2={tim2016}
+					url3={tim2018}
+					url4={tim2019}
+					url5={tim2021}
 				/>
 				<Separator height='1rem' />
 			</Col>
