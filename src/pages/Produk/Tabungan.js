@@ -46,8 +46,8 @@ function Tabungan () {
           />
           <ProductCardGambar
             image={tabur} 
-            ype='TaBur'
-            xplain='Simpanan yang dipersiapkan untuk ibadah Qurban yang pencairannya hanya bisa dilakukan menjelang hari raya Qurban'
+            type='TaBur'
+            explain='Simpanan yang dipersiapkan untuk ibadah Qurban yang pencairannya hanya bisa dilakukan menjelang hari raya Qurban'
           />
         </Row>
         <Row className='justify-content-center'>
@@ -64,14 +64,14 @@ function Tabungan () {
         </Row>
         <Row className='justify-content-center'>
           <ProductCardGambar 
-             image={shaum}
-             type='Shaum'
-             explain='Shaum atau Simpanan Haji dan Umroh merupakan simpanan yang digunakan untuk perisapan ibadah Haji dan Umroh'
+            image={shaum}
+            type='Shaum'
+            explain='Shaum atau Simpanan Haji dan Umroh merupakan simpanan yang digunakan untuk perisapan ibadah Haji dan Umroh'
           />
 					<ProductCardGambar 
-             image={sawal}
-             type='Sawal'
-             explain='Sawal atau Simpanan Walimah merupakan simpanan yang dipersiapkan untuk pelaksanaan walimah pencairan dapa dilakukan menjelang pernikahan'
+            image={sawal}
+            type='Sawal'
+            explain='Sawal atau Simpanan Walimah merupakan simpanan yang dipersiapkan untuk pelaksanaan walimah pencairan dapa dilakukan menjelang pernikahan'
           />
         </Row>
 				<Separator height='5rem' />

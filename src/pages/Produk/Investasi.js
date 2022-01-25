@@ -31,14 +31,14 @@ function Tabungan () {
 					<ProductCardGambar 
             image={simwa}
             type='SimWa'
-             explain='Simpanan bersifat wajib yang harus dibayarkan semua anggota setiap bulannya dengan nominal yang ditentukan oleh koperasi yang bersifat investasi jangka panjang'
+            explain='Simpanan bersifat wajib yang harus dibayarkan semua anggota setiap bulannya dengan nominal yang ditentukan oleh koperasi yang bersifat investasi jangka panjang'
           />
         </Row>
         <Row className="justify-content-center">
           <ProductCardGambar 
-           image={swat}
-           type='SWAT'
-             explain="Simpanan Wajib Ta'awun adalah simpanan wajib khusus bagi anggota yang mengajukan pembiayaan dengan nilai 2.5% dari total pembiayaan"
+            image={swat}
+            type='SWAT'
+            explain="Simpanan Wajib Ta'awun adalah simpanan wajib khusus bagi anggota yang mengajukan pembiayaan dengan nilai 2.5% dari total pembiayaan"
           />
           <ProductCardGambar 
             image={amalmu}
@@ -46,7 +46,6 @@ function Tabungan () {
             explain='Simpanan anggota yang diperlakukan sebagai investasi dan dikelola secara produktif profesional untuk perkembangan usaha koperasi'
           />
         </Row>
-
 				<Separator height='5rem' />
 
       </Col>
