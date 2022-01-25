@@ -18,6 +18,12 @@ import rihlahJungle from '../image/Ke Hutan/hutan.jpg'
 import rihlahPangandaran from '../image/Ke Pantai/pantai.jpg'
 import kantorBaru from '../image/kantor baru.jpg'
 
+import tim2015 from '../image/Tim BRS/2015.jpg'
+import tim2016 from '../image/Tim BRS/2016.jpg'
+import tim2018 from '../image/Tim BRS/2018.jpg'
+import tim2019 from '../image/Tim BRS/2019.jpg'
+import tim2021 from '../image/Tim BRS/2021.jpg'
+
 function Media () {
 	return (
 		<Container>
@@ -88,8 +94,15 @@ function Media () {
 				<Separator height='1rem' />
 				<MediaCard
 					side='left'
-					text='bazaar'
+					text='Bazaar'
 					url1={bazaar1}
+				/>
+				<MediaCard
+					side='right'
+					text='Tim Baiturrahim Syariah'
+					url1={2015}
+					url2={2016}
+					url3={2018}
 				/>
 				<Separator height='1rem' />
 			</Col>
