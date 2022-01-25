@@ -1,6 +1,5 @@
 //import Button from "react-bootstrap/Button"
 import { Col, Container, Row } from "react-bootstrap"
-import tawa from "../image/Produk/Simpanan/tawa.jpg"
 
 export default function ProductCardGambar(props) {
 
@@ -45,7 +44,7 @@ export default function ProductCardGambar(props) {
 	return (
 		<Row style={style}>
 			<Col xl="8" className="gx-0">
-				<img style={image} src={tawa}></img>
+				<img style={image} src={props.image}></img>
 			</Col>
 			<Col xl="4" className='gx-0'>
 				<Row style={{ height: '10%' }}>
