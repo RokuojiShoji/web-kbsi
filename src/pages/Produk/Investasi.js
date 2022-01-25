@@ -38,7 +38,7 @@ function Tabungan () {
           <ProductCardGambar 
            image={swat}
            type='SWAT'
-             explain="Simpanan Wajib Ta'awun "
+             explain="Simpanan Wajib Ta'awun adalah simpanan wajib khusus bagi anggota yang mengajukan pembiayaan dengan nilai 2.5% dari total pembiayaan"
           />
           <ProductCardGambar 
             image={amalmu}
