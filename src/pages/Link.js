@@ -55,7 +55,7 @@ export default function Link () {
     return (
     <Row  style={{height: '100vh', alignItems: 'center'}}>
     <Col className="justify-content-center">
-        <img src={logoBsi} className="d-block my-5 mx-auto" style={{width:'20%'}} alt=""/>
+        <a href='/home'><img src={logoBsi} className="d-block my-5 mx-auto" style={{width:'60%'}} alt=""/></a>
         <LinkCard icon={<SiTelegram style={linkIcon}/>} text='Telegram' link='https://t.me/Kopbsi' />
         <LinkCard icon={<SiWhatsapp style={linkIcon}/>} text='Whatsapp' link='https://wa.me/+6285104711175' />
         <LinkCard icon={<SiGmail style={linkIcon}/>} text='Gmail' link='mailto:koperasibaiturrahimindonesia@gmail.com' />
