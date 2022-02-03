@@ -31,14 +31,14 @@ function LinkCard(props) {
     }
 
     return(
-        <Row className='bg-rb d-flex justify-content-center mx-auto' rel='noreferrer noopener' target='_blank' href={props.link} style={card}>
+        <a className='bg-rb d-flex justify-content-center mx-auto' rel='noreferrer noopener' target='_blank' href={props.link} style={card}>
             <Col xs='2' className='justify-content-end d-flex'>
                 {props.icon}
             </Col>
             <Col xs='8'>
                 <h1 style={text} className="rubik-bold">{props.text}</h1>
             </Col>
-        </Row>
+        </a>
     )
 }
 
