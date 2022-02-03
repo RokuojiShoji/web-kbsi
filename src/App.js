@@ -27,6 +27,7 @@ import StrukturOrganisasi from "./pages/TentangKami/StrukturOrganisasi";
 import SusunanOrganisasi from "./pages/TentangKami/SusunanOrganisasi";
 import Footer from "./components/Footer";
 //import Laporan from "./pages/TentangKami/Laporan";
+import Link from "./pages/Link";
 import { useEffect } from "react";
 
 function App() {
@@ -36,7 +37,7 @@ function App() {
     const isHome = window.location.pathname;
     const nav = document.querySelector("nav");
     const body = document.querySelector("body");
-    if (isHome !== "/home") {
+    if (isHome !== "/home" && isHome !== "/link") {
       nav.classList.remove("nav-transition")
       nav.classList.add("nav-scrolled");
       nav.classList.add("sticky-top")
@@ -50,53 +51,76 @@ function App() {
   return (
     <Container fluid="true">
       <Router>
-        <Navi />
+        
         <Switch>
           <Route path="/visi-misi">
+            <Navi />
             <VisiMisi />
+            <Footer />
           </Route>
           {/* <Route path="/daftar-anggota">
             <DaftarAnggota />
           </Route> */}
           <Route path="/pendaftaran-anggota">
+            <Navi />
             <PendaftaranAnggota />
+            <Footer />
           </Route>
           {/* <Route path="/produk">
             <Produk />
           </Route> */}
           <Route path="/pembiayaan">
+          <Navi />
             <Pembiayaan />
+            <Footer />
           </Route>
           <Route path="/tabungan">
+            <Navi />
             <Tabungan />
+            <Footer />
           </Route>
           <Route path="/investasi">
+            <Navi />
             <Investasi />
+            <Footer />
           </Route>
           <Route path="/struktur-organisasi">
+            <Navi />
             <StrukturOrganisasi />
+            <Footer />
           </Route>
           <Route path="/susunan-organisasi">
+            <Navi />
             <SusunanOrganisasi />
+            <Footer />
           </Route>
           {/* <Route path="/laporan">
             <Laporan />
           </Route> */}
           <Route path="/kontak">
+            <Navi />
             <Kontak />
+            <Footer />
           </Route>
           <Route path="/media">
+            <Navi />
             <Media />
+            <Footer />
           </Route>
           <Route path="/home">
+            <Navi />
             <HomePage />
+            <Footer />
+          </Route>
+          <Route path='/link'>
+            <Link />
           </Route>
           <Route path="/">
             <Redirect to="/home" />
           </Route>
         </Switch>
+      
       </Router>
-      <Footer />
     </Container>
   );
 }
