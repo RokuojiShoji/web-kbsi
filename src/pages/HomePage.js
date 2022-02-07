@@ -110,7 +110,7 @@ function HomePage() {
       <Container fluid='true' className="g-0 py-5 bg-gw">
         <Row className="justify-content-center g-0">
           <Col className="my-auto" lg="2">
-            <h1 className="rubik-bold text-center" style={{color:'#4d4d4d', fontSize:'min(10vw, 3.5rem)'}}>
+            <h1 className="rubik-bold text-center" style={{color:'#4d4d4d', fontSize:'min(10vw, 3.3rem)'}}>
               Visi Kami
             </h1>
           </Col>
