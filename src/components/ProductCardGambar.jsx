@@ -5,7 +5,7 @@ export default function ProductCardGambar(props) {
 
 	const style = {
 		height: '25rem',
-		width: '29rem',
+		width: 'min(90vw, 29rem)',
 		//backgroundColor:'#696969',
 		borderRadius: '0.5rem',
 		boxShadow: '#cacaca 0px 0px 20px',
@@ -29,7 +29,7 @@ export default function ProductCardGambar(props) {
 	const image = {
 		borderRadius: '0.5rem',
 		display: 'block',
-		width: '90%',
+		width: 'min(90%, 70vw)',
 	}
 
 	// const tombol = {
@@ -43,10 +43,10 @@ export default function ProductCardGambar(props) {
 
 	return (
 		<Row style={style}>
-			<Col xl="8" className="gx-0">
+			<Col xs="8" className="gx-0">
 				<img style={image} src={props.image}></img>
 			</Col>
-			<Col xl="4" className='gx-0'>
+			<Col xs="4" className='gx-0'>
 				<Row style={{ height: '10%' }}>
 					<h3 style={head} className='rubik-bold'>{props.type}</h3>
 				</Row>

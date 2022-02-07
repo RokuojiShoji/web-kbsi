@@ -3,12 +3,12 @@ import { Row } from "react-bootstrap";
 export default function VisiMisiCard() {
   const card = {
     textAlign: "center",
-    justifyContent: "Center",
-    marginTop: "5%",
-    marginBottom: "5%",
+    justifyContent: "center",
+    margin: "5% auto",
     borderRadius: "6px",
     padding: "2rem",
-		color: "#eeeeee"
+		color: "#eeeeee",
+    width: 'min(90vw, 40rem)'
   };
 
 	const par = {
@@ -26,8 +26,8 @@ export default function VisiMisiCard() {
 
   return (
     <>
-      <Row style={card} className="bg-rb">
-        <h2>VISI</h2>
+      <Row style={card} className="rubik bg-rb">
+        <h1>VISI</h1>
         <p style={par}>
           Terwujudnya Ekonomi Islam sebagai nilai bersama demi kemajuan dan
           kesinambungan koperasi dan meningkatkan kesejahteraan lahir dan bathin
@@ -35,8 +35,8 @@ export default function VisiMisiCard() {
         </p>
       </Row>
 
-      <Row style={card} className="bg-pp">
-        <h2>MISI</h2>
+      <Row style={card} className="rubik bg-pp">
+        <h1>MISI</h1>
 
         <ul>
           <li style={lis}>
