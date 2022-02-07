@@ -24,7 +24,7 @@ export default function Footer () {
         <Row className="g-0 footer-logo">
           <img src={logo} alt='logoBsi' className='py-1' style={{height:'90%', width:'auto'}}/>
         </Row>
-        <Row className="g-0 footer-media mx-auto" style={{width:'30%'}}>
+        <Row className="g-0 footer-media mx-auto" style={{width:'25rem'}}>
           <a style={{width:'auto'}} rel='noreferrer noopener' target='_blank' href='https://t.me/Kopbsi'><SiTelegram style={mediaIcon}/></a>
           <a style={{width:'auto'}} rel='noreferrer noopener' target='_blank' href='https://wa.me/+6285104711175'><SiWhatsapp className='mx-1' style={mediaIcon}/></a>
           <a style={{width:'auto'}} rel='noreferrer noopener' target='_blank' href='mailto:koperasibaiturrahimindonesia@gmail.com'><SiGmail style={mediaIcon}/></a>

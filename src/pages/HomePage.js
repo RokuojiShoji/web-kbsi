@@ -40,8 +40,10 @@ function HomePage() {
 
   const ident = {
     color: '#cacaca',
-    fontSize: '1.7rem',
+    fontSize: 'min(4.3vw, 2rem)',
     textAlign: 'justify',
+    width: '80%',
+    margin: '0px auto'
   }
 
   const produkTitle = {
@@ -62,14 +64,16 @@ function HomePage() {
     textDecoration: 'none',
   }
   const visi = {
-    fontSize: '1.7rem',
+    fontSize: 'min(4.3vw, 1.7rem)',
     color: '#4d4d4d',
-    textAlign: 'justify'
+    textAlign: 'justify',
+    width: 'min(100%, 90vw)'
   }
 
   const link = {
     color: '#616161 !important',
     textAlign: 'right',
+    marginRight: 'max(1%, 5vw)'
   }
 
 
@@ -86,15 +90,15 @@ function HomePage() {
   }
 
   return (
-    <>
+    <Col>
       {/* intro */}
       <Container fluid="true" className="intro bg-img g-0 align-items-center">
         <div style={spacer}></div>
-        <Col  style={im} className="text-center start">
-          <h1 className='rubik-bold'style={{fontSize:'3.5rem'}}>Siapa Kami ?</h1>
+        <Col style={im} className="text-center start">
+          <h1 className='rubik-bold'style={{fontSize:'min(10vw, 3.5rem)'}}>Siapa Kami ?</h1>
         </Col>
       </Container>
-      <Container style={{width:'60vw'}} className="my-5">
+      <Container className="my-5">
         <p style={ident}>
           Koperasi Baiturrahim Syariah Indonesia adalah koperasi yang kegiatan usahanya bergerak di bidang simpanan,
           pembiayaan, dan investasi sesuai pola bagi hasil dan jual beli tidak tunai yang disahkan menurut syariat Islam
@@ -105,13 +109,14 @@ function HomePage() {
       {/* visi */}
       <Container fluid='true' className="g-0 py-5 bg-gw">
         <Row className="justify-content-center g-0">
-          <Col className="my-auto" lg="3">
-            <h1 className="rubik-bold" style={{color:'#4d4d4d', fontSize:'3.5rem'}}>
+          <Col className="my-auto" lg="2">
+            <h1 className="rubik-bold text-center" style={{color:'#4d4d4d', fontSize:'min(10vw, 3.5rem)'}}>
               Visi Kami
             </h1>
           </Col>
+          <Col lg='1' />
           <Col lg="6" >
-            <p style={visi} className="">
+            <p style={visi} className="mx-auto">
             Terwujudnya Ekonomi Islam sebagai nilai bersama demi kemajuan dan kesinambungan koperasi dan 
             meningkatkan kesejahteraan lahir dan bathin masyarakat Indonesia menuju kebaikan di dunia dan di akhirat 
             </p>
@@ -148,7 +153,7 @@ function HomePage() {
       </Container>
 
       {/* <div style={{height:'2px'}} className='bg-gw'></div> */}
-    </>
+    </Col>
   );
 }
 
