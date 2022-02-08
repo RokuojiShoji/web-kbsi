@@ -1,4 +1,4 @@
-import { Container, Row, Col } from "react-bootstrap";
+import {Row, Col } from "react-bootstrap";
 import {SiYoutube, SiGmail, SiWhatsapp, SiTelegram, SiInstagram, SiFacebook} from "react-icons/si"
 import logoBsi from '../image/logoBsi.png'
 
@@ -14,14 +14,14 @@ function LinkCard(props) {
         textDecoration: 'none',
     }
 
-    const line = {
-        borderLeft: "2px solid #cacaca",
-        borderRight: "2px solid #cacaca",
-        height: "4em",
-        width: "0px",
-        marginLeft: "auto",
-        marginRight: "auto",
-      };
+    // const line = {
+    //     borderLeft: "2px solid #cacaca",
+    //     borderRight: "2px solid #cacaca",
+    //     height: "4em",
+    //     width: "0px",
+    //     marginLeft: "auto",
+    //     marginRight: "auto",
+    //   };
 
     const text = {
         justifyContent:'center',

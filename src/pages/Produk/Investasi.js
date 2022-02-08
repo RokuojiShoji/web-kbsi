@@ -1,5 +1,4 @@
 import { Col, Container, Row } from "react-bootstrap";
-import ProductCard from "../../components/ProductCard";
 import ProductCardGambar from "../../components/ProductCardGambar";
 import Separator from "../../components/Separator";
 

@@ -1,4 +1,5 @@
 import {Col, Row, Container} from "react-bootstrap";
+//import HorizontalScroll from "react-scroll-horizontal"
 import { useEffect } from "react";
 import {FaWallet, FaHandHoldingUsd, FaMoneyBillWave} from 'react-icons/fa'
 
@@ -56,8 +57,8 @@ function HomePage() {
   const produkCard ={
     display: 'flex',
     flexDirection: 'column',
-    height:'20rem',
-    width:'20rem',
+    height:'20em',
+    width:'20em',
     borderRadius: '0.5rem',
     boxShadow: '0px 0px 40px #333333',
     padding: '3rem',

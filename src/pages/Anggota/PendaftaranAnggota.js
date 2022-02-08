@@ -1,8 +1,7 @@
-import { Container, Row, Col, Form, Button, FormText } from 'react-bootstrap'
+import { Container, Col, Form, Button, FormText } from 'react-bootstrap'
 import emailjs, { init } from '@emailjs/browser'
 import React, { useRef, useState } from 'react'
 import Separator from '../../components/Separator'
-import { Redirect } from 'react-router-dom'
 
 init('user_COW0bZlVe8lhcgD9ObueN')
 
