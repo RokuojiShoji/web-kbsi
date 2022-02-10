@@ -68,6 +68,7 @@ function PendaftaranAnggota() {
 
 	const contain = {
 		borderRadius: '0.5rem',
+		width: 'min(90vw, 45em)'
 	}
 
 	const header = {
@@ -80,7 +81,7 @@ function PendaftaranAnggota() {
 	return (
 		<Col>
 			<h1 style={header} className='rubik-bold'>Form Pendaftaran Anggota</h1>
-			<Container style={contain} className='rubik-light w-50 bg-rb mt-2 mb-2 py-3'>
+			<Container style={contain} className='rubik-light bg-rb mt-2 mb-2 py-3'>
 				{
 					show ? <Confirmation />
 						: null
