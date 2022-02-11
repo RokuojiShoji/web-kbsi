@@ -25,7 +25,7 @@ function Tabungan () {
           <ProductCardGambar 
             image={simpok}
             type='SimPok'
-            explain='Simpanan yang pertama kali dibayarkan oleh anggota koperasi saat bergaung degen menjadi anggota. simpanan ini merupakan investasi jangka panjang milik anggota'
+            explain='Simpanan yang pertama kali dibayarkan oleh anggota koperasi saat bergabung menjadi anggota. simpanan ini merupakan investasi jangka panjang milik anggota'
           />
 					<ProductCardGambar 
             image={simwa}
@@ -42,7 +42,7 @@ function Tabungan () {
           <ProductCardGambar 
             image={amalmu}
             type='Amalmu'
-            explain='Simpanan anggota yang diperlakukan sebagai investasi dan dikelola secara produktif profesional untuk perkembangan usaha koperasi'
+            explain='Simpanan anggota yang menggunakan akad mudharabah dan diperlakukan sebagai investasi serta dikelola secara produktif profesional untuk perkembangan usaha koperasi'
           />
         </Row>
 				<Separator height='5rem' />
