@@ -26,7 +26,7 @@ import Media from "./pages/Media";
 import StrukturOrganisasi from "./pages/TentangKami/StrukturOrganisasi";
 import SusunanOrganisasi from "./pages/TentangKami/SusunanOrganisasi";
 import Footer from "./components/Footer";
-//import Laporan from "./pages/TentangKami/Laporan";
+import Laporan from "./pages/TentangKami/Laporan";
 import Link from "./pages/Link";
 import { useEffect } from "react";
 
@@ -58,6 +58,24 @@ function App() {
             <VisiMisi />
             <Footer />
           </Route>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
           {/* <Route path="/daftar-anggota">
             <DaftarAnggota />
           </Route> */}
@@ -70,7 +88,7 @@ function App() {
             <Produk />
           </Route> */}
           <Route path="/pembiayaan">
-          <Navi />
+            <Navi />
             <Pembiayaan />
             <Footer />
           </Route>
@@ -94,9 +112,11 @@ function App() {
             <SusunanOrganisasi />
             <Footer />
           </Route>
-          {/* <Route path="/laporan">
+          <Route path="/laporan">
+            <Navi />
             <Laporan />
-          </Route> */}
+            <Footer />
+          </Route>
           <Route path="/kontak">
             <Navi />
             <Kontak />

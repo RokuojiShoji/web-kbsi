@@ -34,7 +34,7 @@ function Navi() {
                 Tentang Kami
               </div>
               <ul
-                className="dropdown-menu animate fade"
+                className="dropdown-menu animate fades"
                 aria-labelledby="dropdownAbout"
               >
                 <li>
@@ -42,6 +42,9 @@ function Navi() {
                 </li>
                 <li>
                   <a className="dropdown-item" href="/struktur-organisasi">Struktur Organisasi</a>
+                </li>
+                <li>
+                  <a className="dropdown-item" href="/laporan">Laporan</a>
                 </li>
                 {/* <li>
                   <a className='dropdown-item' href='/susunan-organisasi'>Susunan Organisasi</a>
@@ -59,7 +62,7 @@ function Navi() {
                 Produk
               </div>
               <ul
-                className="dropdown-menu animate fade"
+                className="dropdown-menu animate fades"
                 aria-labelledby="dropdownProduct"
               >
                 <li>
@@ -78,7 +81,7 @@ function Navi() {
                 Anggota
               </div>
               <ul
-                className="dropdown-menu animate fade"
+                className="dropdown-menu animate fades"
                 aria-labelledby="dropdownMember"
               >
                 {/* <li>
