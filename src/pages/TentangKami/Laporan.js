@@ -2,8 +2,9 @@ import { Container } from "react-bootstrap";
 import Separator from "../../components/Separator";
 
 import neraca from "../../image/Laporan Keuangan/Neraca.png"
+import neracaJuni2022 from "../../image/Laporan Keuangan/NeracaJuni2022.png"
 import phu from "../../image/Laporan Keuangan/PHU.png"
-
+import phuJuni2022 from "../../image/Laporan Keuangan/PHUJuni2022.png"
 
 export default function Laporan () {
 	return (
@@ -12,8 +13,8 @@ export default function Laporan () {
 			<h1 className="text-center rubik-bold" style={{fontSize: 'min(10vw, 3.5rem)', color: '#4D4D4D'}} >Laporan Keuangan</h1>
 			<Separator height="3rem"/>
 
-			<ImageContainer src={neraca} header="Neraca"/>
-			<ImageContainer src={phu} header="PHU" />
+			<ImageContainer src={neracaJuni2022} header="Neraca"/>
+			<ImageContainer src={phuJuni2022} header="Perhitungan Hasil Usaha" />
 		</Container>
 	)
 }
