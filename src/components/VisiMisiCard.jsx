@@ -29,9 +29,7 @@ export default function VisiMisiCard() {
       <Row style={card} className="rubik bg-rb">
         <h1>VISI</h1>
         <p style={par}>
-          Terwujudnya Ekonomi Islam sebagai nilai bersama demi kemajuan dan
-          kesinambungan koperasi dan meningkatkan kesejahteraan lahir dan bathin
-          masyarakat Indonesia menuju kebaikan di dunia dan di akhirat
+          Menjadi Koperasi Syariah Terbaik dan Terbesar di Jawa Barat
         </p>
       </Row>
 
@@ -53,6 +51,10 @@ export default function VisiMisiCard() {
 						Memberdayakan setiap anggota Koperasi Baiturrahim
 						Syariah untuk mencapai kesejahteraan lahir dan bathin
 					</li>
+          <li style={lis}>
+            Berkontribusi dalam memperbaiki ESSPEK (Ekonomi, Sosial,
+            Spiritual, Pendidikan, Kesehatan) Indonesia
+          </li>
         </ul>
       </Row>
     </>

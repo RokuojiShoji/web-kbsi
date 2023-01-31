@@ -10,6 +10,7 @@ import sidik from "../../image/Produk/Simpanan/sidik.jpg"
 import simut from "../../image/Produk/Simpanan/simut.jpg"
 import tabur from "../../image/Produk/Simpanan/tabur.jpg"
 import tawa from "../../image/Produk/Simpanan/tawa.jpg"
+import sitasya from "../../image/Produk/Simpanan/sitasya.jpg"
 
 function Tabungan () {
 	
@@ -71,6 +72,11 @@ function Tabungan () {
             image={sawal}
             type='Sawal'
             explain='Sawal atau Simpanan Walimah merupakan simpanan yang dipersiapkan untuk pelaksanaan walimah pencairan dapa dilakukan menjelang pernikahan'
+          />
+          <ProductCardGambar
+            image={sitasya}
+            type='SiTasya'
+            explain='Simpanan Tamasya merupakan simpanan / tabungan untuk wisata / piknik'
           />
         </Row>
 				<Separator height='5rem' />

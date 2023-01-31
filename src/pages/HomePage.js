@@ -118,8 +118,7 @@ function HomePage() {
           <Col lg='1' />
           <Col lg="6" >
             <p style={visi} className="mx-auto">
-            Terwujudnya Ekonomi Islam sebagai nilai bersama demi kemajuan dan kesinambungan koperasi dan 
-            meningkatkan kesejahteraan lahir dan bathin masyarakat Indonesia menuju kebaikan di dunia dan di akhirat 
+            Menjadi Koperasi Syariah Terbaik dan Terbesar di Jawa Barat
             </p>
             <div style={link}>
               <a className='rubik link' href='/visi-misi' >lihat selengkapnya --></a>
