@@ -28,6 +28,7 @@ import SusunanOrganisasi from "./pages/TentangKami/SusunanOrganisasi";
 import Footer from "./components/Footer";
 import Laporan from "./pages/TentangKami/Laporan";
 import Link from "./pages/Link";
+import LaporanTest from "./pages/TentangKami/LaporanTest"
 import { useEffect } from "react";
 
 function App() {
@@ -58,24 +59,6 @@ function App() {
             <VisiMisi />
             <Footer />
           </Route>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
           {/* <Route path="/daftar-anggota">
             <DaftarAnggota />
           </Route> */}
@@ -115,6 +98,11 @@ function App() {
           <Route path="/laporan">
             <Navi />
             <Laporan />
+            <Footer />
+          </Route>
+          <Route path="/laporantest">
+            <Navi />
+            <LaporanTest />
             <Footer />
           </Route>
           <Route path="/kontak">
