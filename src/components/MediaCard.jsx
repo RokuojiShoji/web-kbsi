@@ -6,9 +6,10 @@ function ImgSlide(props) {
     display: "block",
     maxWidth:'100%',
     maxHeight:'21rem',
-    padding: "1rem",
+    padding: "0.8rem",
     marginLeft: "auto",
     marginRight: "auto",
+    borderRadius: "1.5em",
   };
 
   return (
@@ -46,6 +47,7 @@ export default function MediaCard(props) {
   const text = {
     textAlign: "center",
     margin: "auto",
+    color: "#696969"
   };
 
   var line, year
@@ -98,7 +100,7 @@ export default function MediaCard(props) {
         <Row style={line} />
       </Col>
       <Col xl="5" className="justify-content-center d-flex">
-        <h2 style={text}>{props.text}</h2>
+        <h1 style={text} className="rubik-550">{props.text}</h1>
       </Col>
 			</>
 			)}
@@ -106,7 +108,7 @@ export default function MediaCard(props) {
 {props.side === 'right' && (
       <>
 			<Col xl="5" className="justify-content-center d-flex">
-				<h2 style={text}>{props.text}</h2>
+				<h1 style={text} className="rubik-550">{props.text}</h1>
       </Col>
       <Col xl="1" className="g-0 justify-content-center">
         <Row style={line} />

@@ -11,6 +11,7 @@ import rat20132 from '../image/RAT TB 2013/rat20132.jpg'
 import mat20161 from '../image/MAT TB 2016/mat-2016.jpg'
 import mat20191 from '../image/MAT TB 2019/mat-19-1.jpg'
 import mat20192 from '../image/MAT TB 2019/mat-19-2.jpg'
+import mat20221 from '../image/MAT TB 2022/mat-22-1.jpg'
 import bankSampah from '../image/Launching Bank Sampah/bs1.jpg'
 import bazaar1 from '../image/Bazaar/b1.jpg'
 import kantorLama from '../image/Kantor Lama/kanlam.jpg'
@@ -91,14 +92,21 @@ function Media () {
 					text='Kantor Baru bsi'
 					url1={kantorBaru}
 				/>
-				<Separator height='1rem' />
-				<MediaCard
+				<MediaCard 
 					side='left'
+					year='2023'
+					text='MAT TB 2022'
+					url1={mat20221}
+				/>
+				<Separator height='1rem' />
+				
+				<MediaCard
+					side='right'
 					text='Bazaar'
 					url1={bazaar1}
 				/>
 				<MediaCard
-					side='right'
+					side='left'
 					text='Tim Baiturrahim Syariah'
 					url1={tim2015}
 					url2={tim2016}
