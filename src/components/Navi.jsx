@@ -38,14 +38,14 @@ function Navi() {
                 aria-labelledby="dropdownAbout"
               >
                 <li>
-                  <a className="dropdown-item" href="/visi-misi">Visi Misi</a>
+                  <a className="dropdown-item" href="/visi-misi">Sejarah & Visi Misi</a>
                 </li>
                 <li>
                   <a className="dropdown-item" href="/struktur-organisasi">Struktur Organisasi</a>
                 </li>
                 <li>
                   <a className="dropdown-item" href="/laporan">Laporan</a>
-                </li>
+                          </li>
                 {/* <li>
                   <a className='dropdown-item' href='/susunan-organisasi'>Susunan Organisasi</a>
                 </li> */}
