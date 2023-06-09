@@ -19,6 +19,15 @@ import rihlahJungle from '../image/Ke Hutan/hutan.jpg'
 import rihlahPangandaran from '../image/Ke Pantai/pantai.jpg'
 import kantorBaru from '../image/kantor baru.jpg'
 
+import pltSnack1 from '../image/KISAH/Snack Bouquet/pltSnack_1_.jpg'
+import pltSnack2 from '../image/KISAH/Snack Bouquet/pltSnack_2_.jpg'
+import pltSnack3 from '../image/KISAH/Snack Bouquet/pltSnack_3_.jpg'
+import pbcSpk1 from '../image/KISAH/Public Speaking/pbcSpk_5.jpg'
+import pbcSpk2 from '../image/KISAH/Public Speaking/pbcSpk_3.jpg'
+import haBil1 from '../image/Halal Bihalal 2023/haBil_1.jpg'
+import haBil2 from '../image/Halal Bihalal 2023/haBil_3.jpg'
+import haBil3 from '../image/Halal Bihalal 2023/haBil_5.jpg'
+
 import tim2015 from '../image/Tim BRS/2015.jpg'
 import tim2016 from '../image/Tim BRS/2016.jpg'
 import tim2018 from '../image/Tim BRS/2018.jpg'
@@ -98,15 +107,36 @@ function Media () {
 					text='MAT TB 2022'
 					url1={mat20221}
 				/>
+				<MediaCard
+					side='right'
+					text='Halal Bihalal 2023'
+					url1={haBil1}
+					url2={haBil2}
+					url3={haBil3}
+				/>
+				<MediaCard
+					side='left'
+					text='Pelatihan Snack Bouquet'
+					url1={pltSnack1}
+					url2={pltSnack2}
+					url3={pltSnack3}
+				/>
+				<MediaCard
+					side='right'
+					text='Public Speaking'
+					url1={pbcSpk1}
+					url2={pbcSpk2}
+				/>
+				
 				<Separator height='1rem' />
 				
 				<MediaCard
-					side='right'
+					side='left'
 					text='Bazaar'
 					url1={bazaar1}
 				/>
 				<MediaCard
-					side='left'
+					side='right'
 					text='Tim Baiturrahim Syariah'
 					url1={tim2015}
 					url2={tim2016}
