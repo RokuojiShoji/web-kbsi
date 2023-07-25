@@ -194,7 +194,7 @@ function CarouselContainer(props) {
     <div>
       <Carousel style={style.cc}>
         <CarouselItem style={style.ci}>
-          <img src={mat20201} style={style,a}/>
+          <img src={mat20201} />
         </CarouselItem>
         <CarouselItem style={style.ci}>
           <img src={mat20202}/>
