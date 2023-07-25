@@ -22,6 +22,7 @@ import Investasi from "./pages/Produk/Investasi";
 import Kontak from "./pages/Kontak";
 import HomePage from "./pages/HomePage";
 import Media from "./pages/Media";
+import Media2 from "./pages/Media2";
 // import Produk from "./pages/Produk";
 import StrukturOrganisasi from "./pages/TentangKami/StrukturOrganisasi";
 import SusunanOrganisasi from "./pages/TentangKami/SusunanOrganisasi";
@@ -113,6 +114,11 @@ function App() {
           <Route path="/media">
             <Navi />
             <Media />
+            <Footer />
+          </Route>
+          <Route path="/media2">
+            <Navi />
+            <Media2 />
             <Footer />
           </Route>
           <Route path="/home">

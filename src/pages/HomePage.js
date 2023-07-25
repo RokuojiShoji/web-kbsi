@@ -151,8 +151,6 @@ function HomePage() {
           </Col>
         </Row>
       </Container>
-
-      {/* <div style={{height:'2px'}} className='bg-gw'></div> */}
     </Col>
   );
 }
