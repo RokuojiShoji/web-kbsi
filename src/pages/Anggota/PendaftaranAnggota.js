@@ -3,7 +3,7 @@ import emailjs, { init } from '@emailjs/browser'
 import React, { useRef, useState } from 'react'
 import Separator from '../../components/Separator'
 
-init('user_Yb-IAIcBXJkYEMOvu')
+init('Yb-IAIcBXJkYEMOvu')
 
 function FormMaster(props) {
 	const label = {
