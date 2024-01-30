@@ -10,6 +10,8 @@ import neracaJuni2022 from "../../image/Laporan Keuangan/NeracaJuni2022.png";
 import phuJuni2022 from "../../image/Laporan Keuangan/PHUJuni2022.png";
 import neracaDes2022 from "../../image/Laporan Keuangan/neracaDes2022.png";
 import phuDes2022 from "../../image/Laporan Keuangan/phuDes2022.png";
+import neracaDes2023 from "../../image/Laporan Keuangan/NeracaDes2023.png";
+import phuDes2023 from "../../image/Laporan Keuangan/phuDes2023.png";
 
 export default function Laporan() {
   const [openModal, setOpenModal] = useState(false);
@@ -51,6 +53,10 @@ export default function Laporan() {
       src: neracaDes2022,
       header: "Neraca Desember 2022",
     },
+    Des23: {
+      src: neracaDes2023,
+      header: "Neraca Desember 2023",
+    },
   };
 
   const phu = {
@@ -65,6 +71,10 @@ export default function Laporan() {
     Des22: {
       src: phuDes2022,
       header: "PHU Desember 2022",
+    },
+    Des23: {
+      src: phuDes2023,
+      header: "PHU Desember 2023",
     },
   };
 
@@ -105,6 +115,13 @@ export default function Laporan() {
           onClick={() => handleClick("Des22")}
         >
           Desember 2022
+        </button>
+        <button
+          className="rubik-bold"
+          style={style.button}
+          onClick={() => handleClick("Des23")}
+        >
+          Desember 2023
         </button>
       </Container>
       <ModalContainer
