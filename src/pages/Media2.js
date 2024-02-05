@@ -49,35 +49,31 @@ import MediaCard from "../components/MediaCard";
 
 export default function Media2() {
   const [openModal, setOpenModal] = useState(false);
-  const [selectYear, setSelectYear] = useState("2022");
+  const [selectEvent, setSelectEvent] = useState("2022");
 
   Modal.setAppElement("#root");
 
-  const year = {
-    2022: {
-      mat21: {
-        src: [mat20211, mat20212, mat20213],
-        title: "MAT Tahun Buku 2021",
-      },
+  const events = {
+    mat21: {
+      src: [mat20211, mat20212, mat20213],
+      title: "MAT Tahun Buku 2021",
     },
-    2023: {
-      mat22: {
-        src: [mat20221],
-        title: "MAT Tahun Buku 2022",
-      },
-      kalFeb: {
-        src: [kalFeb221, kalFeb222, kalFeb223],
-        title: "Kalam Februari 2023"
-      },
-      haBil: {
-        scr: [haBil1, haBil2, haBil3],
-        title: "Halal Bihalal 2023"
-      }
+    mat22: {
+      src: [mat20221],
+      title: "MAT Tahun Buku 2022",
+    },
+    kalFeb: {
+      src: [kalFeb221, kalFeb222, kalFeb223],
+      title: "Kalam Februari 2023",
+    },
+    haBil: {
+      src: [haBil1, haBil2, haBil3],
+      title: "Halal Bihalal 2023",
     },
   };
 
   const handleClick = (media) => {
-    setSelectYear(media);
+    setSelectEvent(media);
     setOpenModal(true);
   };
 
@@ -114,11 +110,13 @@ export default function Media2() {
       <ModalContainer
         isOpen={openModal}
         setModalOpen={setOpenModal}
-        media={year[selectYear]}
+        events={events[selectEvent]}
       />
     </Container>
   );
 }
+
+//////////////////////////////////////////////////////////////////////////////////
 
 function ModalContainer(props) {
   const style = {
@@ -169,37 +167,39 @@ function ModalContainer(props) {
       >
         &times;
       </button>
-        <CarouselContainer />
+      <CarouselContainer event={props.events} />
     </Modal>
   );
 }
 
+////////////////////////////////////////////////////////////////////////////////////
+
 function CarouselContainer(props) {
-  
   const style = {
     ci: {
       borderRadius: "0.5rem",
       padding: "20px",
-      backgroundColor: "#343434"
+      backgroundColor: "#343434",
     },
     cc: {
-      width: "100%"
+      width: "100%",
     },
     img: {
-      width: "80%"
-    }
-  }
-  
+      width: "100%",
+      borderRadius: "0.4rem",
+    },
+  };
+
   return (
     <div>
+      <h1>{props.event.title}</h1>
       <Carousel style={style.cc}>
-        <CarouselItem style={style.ci}>
-          <img src={mat20201} />
-        </CarouselItem>
-        <CarouselItem style={style.ci}>
-          <img src={mat20202}/>
-        </CarouselItem>
+        {props.event.src.map((image) => (
+          <CarouselItem style={style.ci}>
+            <img src={image} style={style.img} />
+          </CarouselItem>
+        ))}
       </Carousel>
     </div>
-  )
+  );
 }
