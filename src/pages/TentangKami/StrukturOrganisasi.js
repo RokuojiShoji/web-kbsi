@@ -1,5 +1,4 @@
 import struktur from '../../image/struktur.png'
-import {Row} from 'react-bootstrap'
 function StrukturOrganisasi () {
 	const style = {
 		padding: '0px',

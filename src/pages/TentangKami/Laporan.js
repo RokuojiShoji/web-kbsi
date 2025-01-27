@@ -12,6 +12,8 @@ import neracaDes2022 from "../../image/Laporan Keuangan/neracaDes2022.png";
 import phuDes2022 from "../../image/Laporan Keuangan/phuDes2022.png";
 import neracaDes2023 from "../../image/Laporan Keuangan/NeracaDes2023.png";
 import phuDes2023 from "../../image/Laporan Keuangan/phuDes2023.png";
+import neracaDes2024 from "../../image/Laporan Keuangan/neracaDes2024.png";
+import phuDes2024 from "../../image/Laporan Keuangan/phuDes2024.png";
 
 export default function Laporan() {
   const [openModal, setOpenModal] = useState(false);
@@ -57,6 +59,10 @@ export default function Laporan() {
       src: neracaDes2023,
       header: "Neraca Desember 2023",
     },
+    Des24: {
+      src: neracaDes2024,
+      header: "Neraca Desember 2024",
+    },
   };
 
   const phu = {
@@ -76,6 +82,10 @@ export default function Laporan() {
       src: phuDes2023,
       header: "PHU Desember 2023",
     },
+    Des24: {
+      src: phuDes2024,
+      header: "PHU Desember 2024",
+    },
   };
 
   const handleClick = (date) => {
@@ -85,7 +95,7 @@ export default function Laporan() {
   };
 
   return (
-    <Container>
+    <Container className="col">
       <Separator height="3rem" />
       <h1
         className="text-center rubik-bold"
@@ -116,6 +126,8 @@ export default function Laporan() {
         >
           Desember 2022
         </button>
+      </Container>
+      <Container style={style.buttonContainer}>
         <button
           className="rubik-bold"
           style={style.button}
@@ -123,7 +135,15 @@ export default function Laporan() {
         >
           Desember 2023
         </button>
+        <button
+          className="rubik-bold"
+          style={style.button}
+          onClick={() => handleClick("Des24")}
+        >
+          Desember 2024
+        </button>
       </Container>
+      <Separator height="3rem" />
       <ModalContainer
         isOpen={openModal}
         setModalOpen={setOpenModal}
@@ -195,6 +215,7 @@ function ImageContainer(props) {
       <h2 className="text-center rubik-bold">{props.header}</h2>
       <Separator height="1rem" />
       <img
+        alt=""
         src={props.src}
         className="w-100"
         style={{ borderRadius: "0.5em" }}
